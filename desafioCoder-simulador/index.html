@@ -7,17 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
   <link rel="stylesheet" href="style.css">
   <title>Calculadora de Steam</title>
 </head>
 
 <body>
+  <div class="container-prueba">
+    <button type="button" class="btn btn-primary" id="prueba-1" onclick="prueba4()">Consigna 4</button>
+    <button type="button" class="btn btn-primary" id="prueba-2" onclick="prueba5()">Consigna 5</button>
+    <button type="button" class="btn btn-primary" id="prueba-3" onclick="prueba6()">Consigna 6</button>
+  </div>
+
+
 
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
       <a class="navbar-brand" href="#">Calculadora <br> de impuestos</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="calcular()">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -47,29 +55,49 @@
 
     <!-- Three columns  -->
     <div class="row">
-      <div class="col-lg-4">
+
+
+      <!-- Columna 1-->
+      <div class="col-lg-4" id="col1">
         <img class="rounded-circle" src="./img/gris.jpg" alt="gray circle" width="140" height="140">
-        <h2>Precio base</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis necessitatibus eligendi vero aut id
-          sunt laboriosam cum autem. Praesentium debitis nam ullam aliquam ipsam aspernatur ratione asperiores eum,
-          modi, eaque amet tempore quisquam nesciunt dignissimos?</p>
+        <h2>Calculadora para Steam</h2>
+        <p>Calcula el precio final de tu compra antes de realizarla.
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas similique eum architecto deserunt rerum nostrum
+          aperiam, nemo velit recusandae in error impedit voluptas tenetur aliquam inventore dolores? Repellendus,
+          sapiente maxime!
+        </p>
+
+        <p><a class="btn btn-secondary" href="#" role="button" onclick="prueba4()">Iniciar</a></p>
       </div><!-- /.col-lg-4 -->
 
-      <div class="col-lg-4">
+
+      <!-- Columna  2-->
+      <div class=" col-lg-4">
         <img class="rounded-circle" src="./img/gris.jpg" alt="gray circle" width="140" height="140">
-        <h2>Impuestos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magnam earum consectetur, consequatur nam
-          quas cum qui quia tenetur sequi expedita! Tempore ut sapiente dolore atque eum tempora id sequi consectetur
-          ipsam deleniti, alias est.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Ver detalles</a></p>
+        <h2>Tienda de juegos digitales</h2>
+        <p>Consultá nuestro catálogo de juegos digitales marca patito.
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolores! Eveniet amet laboriosam esse iste
+          quasi repellendus, ab voluptatibus atque nihil, laborum delectus hic quaerat quidem labore, suscipit
+          impedit
+          aliquid!
+        </p>
+        <p><a class="btn btn-secondary" href="#" role="button">Ver Lista</a></p>
       </div><!-- /.col-lg-4 -->
+
+
+      <!-- Columna 3 -->
       <div class="col-lg-4">
         <img class="rounded-circle" src="./img/gris.jpg" alt="gray circle" width="140" height="140">
-        <h2>Precio Final</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-          felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-          massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Ver detalles</a></p>
+        <h2>Tienda de juegos físicos</h2>
+        <p>Venta de videojuegos en formato físico.
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, hic a et aperiam libero neque
+          perspiciatis voluptatem fuga iure deserunt reiciendis suscipit! Alias iste dolorum, et delectus consectetur
+          corrupti voluptatem.
+        </p>
+        <p><a class="btn btn-secondary" href="#" role="button">Ver stock</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
   </main>
