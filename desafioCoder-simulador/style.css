@@ -1,7 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   max-width: 100vw;
   font-size: 12px;
   padding: 3% 3%;
+  background-color: slategrey;
 }
 
 .col-lg-4 {
@@ -10,11 +15,22 @@ body {
 
 #col1 {
   background-image: url("./img/calc.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
 }
 
-.container-prueba {
-  position: relative;
-  left: 35%;
+#col2 {
+  background-image: url("./img/yellow.svg");
+}
+
+#col3 {
+  background-image: url("./img/yellow.svg");
+}
+
+.grupoBtn {
+  display: inline-flex;
+}
+
+#banner {
+  margin-left: 30px;
 }
