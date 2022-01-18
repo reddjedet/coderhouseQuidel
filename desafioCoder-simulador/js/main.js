@@ -1,6 +1,6 @@
-/* Falta agregar el getElementById vinculado a el boton search*/
-// FALTA IF ELSE
+/* Hay fragmentos sueltos porque todavía no los pude implementar como quisiera */
 
+/* Primer tercio de la ventana = calcular iva de juegos vistos en steam y sugerir la alternativa marca patito con descuento */
 const calcularIva = document.getElementById("calcular-iva");
 calcularIva.addEventListener("click", entrada);
 
@@ -26,30 +26,10 @@ function entrada() {
   }
 }
 
-/* ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
 
-//Actividad 5 - Incorporar objetos
-//lista fisicos con stock limitado
-
-//oferta
-
-const ofertaDelDia = {
-  nombre: "Grand Theft Auto V",
-  precio: 1050.62,
-  disponibilidad: 14,
-};
-
-//Obteniendo valores del objeto
-console.log(ofertaDelDia.nombre);
-console.log(ofertaDelDia.precio);
-console.log(ofertaDelDia.disponibilidad);
-
-//Modificando valores del objeto
-ofertaDelDia.nombre = "juegoNuevo";
-ofertaDelDia.precio = 100;
-
-/* //Actividad 6  - Incorporar arrays + ordenar un array
-productos fisicos sin vender en el stock de un local comercial*/
+//Segundo tercio de la ventana = Tienda digital. Mostrar lista
+//Actividad 6  - Incorporar arrays
 
 const stock = [
   { id: 21, juego: "god of war", precio: 4200 },
@@ -59,28 +39,49 @@ const stock = [
   { id: 25, juego: "Age of Empires 2", precio: 224.99 },
 ];
 
+/* lista de juegos digitales desde un array */
 const juegosDigitales = document.getElementById("juegos-digitales");
 juegosDigitales.addEventListener("click", listaDigitales);
 
+/* devolver por consola el largo de la lista */
 function listaDigitales() {
   console.log(stock.length);
-  //Agregar a la lista
-  /*   stock.push({ id: 26, juego: "juegonuevo", precio: 250 });
-  stock.length; */
-
-  //Buscar por id
-  function consultar() {
-    let buscar = stock.find((producto) => producto.id === 23);
-    buscar();
-
-    //Buscar productos cuyo precio sea mayor de $5.000
-    const menorQuePrecio = stock.filter((producto) => producto.precio < 1000);
-    console.log(menorQuePrecio);
-    //consultar si hay stock monstrandolo al usuario
-    //Agregar peticion de juegos fisicos  (lista)
-  }
 }
-//boton generico
+/* Agregar a la lista */
+stock.push({ id: 26, juego: "juegonuevo", precio: 250 });
+stock.length;
 
-/*     let buscar = stock.find((producto) => producto.id === 23);
-    buscar(); */
+//Buscar por id
+function consultar() {
+  let buscar = stock.find((producto) => producto.id === 23);
+  buscar();
+
+  //Buscar productos cuyo precio sea mayor de $5.000
+  const menorQuePrecio = stock.filter((producto) => producto.precio < 1000);
+  console.log(menorQuePrecio);
+  //consultar si hay stock monstrandolo al usuario
+  //Agregar peticion de juegos fisicos  (lista)
+}
+
+/* let buscar = stock.find((producto) => producto.id === 23);
+buscar(); */
+
+/* ---------------------------------------------------------------------------- */
+
+//Tercer tercio de la ventana = Tienda de juegos fisicos. Ver stock y oferta semanal
+//Actividad 5 - Incorporar objetos
+
+const oferta = document.getElementById("oferta");
+oferta.addEventListener("click", verOferta);
+
+function verOferta(juego, precio) {
+  this.juego = juego;
+  this.precio = precio;
+  this.informe = function () {
+    console.log("Esta lista se actualiza todos los miércoles.");
+  };
+
+  const miercoles = new verOferta("juego de los miercoles", 202);
+  miercoles.juego();
+  miercoles.precio();
+}
