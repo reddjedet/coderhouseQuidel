@@ -1,0 +1,673 @@
+
+//Intentos fallidos
+
+const lineage2 = [
+  { Profesion: "Hell Knight", Raza: "Humano", Tipo: "Tanque", Arma: "Espada" },
+  {
+    Profesion: "Ghost Hunter",
+    Raza: "Elfo oscuro",
+    Tipo: "Asesino",
+    Arma: "Daga",
+  },
+  { Profesion: "Mystic Muse", Raza: "Elfo", Tipo: "Nuker", Arma: "Blunt" },
+  {
+    Profesion: "Doombringer",
+    Raza: "Kamael",
+    Tipo: "Guerrero",
+    Arma: "Ancient sword",
+  },
+  { Profesion: "Dominator", Raza: "Orco", Tipo: "Support", Arma: "Blunt" },
+  { Profesion: "Maestro", Raza: "Enano", Tipo: "Guerrero", Arma: "Martillo" },
+];
+
+for (let personajes of lineage2) {
+  let button = document.createElement("button");
+  button.innerHTML = `<p>
+  ${personajes.Raza}
+  ${personajes.Profesion}
+  ${personajes.Tipo}
+  ${personajes.Arma} 
+  </p>
+  <br>`;
+  document.body.appendChild(button);
+}
+
+//Agregar funcion para ver descripcion de x profesion/raza
+//Para modificar el html voy a mostrar/ocultar sections
+//funcion para agreaar / quitar personajes
+
+
+
+
+//parte 2
+
+//razas
+const raza = [
+  { id: 1, descripcion: "Humano" },
+  { id: 2, descripcion: "Elfo" },
+  { id: 3, descripcion: "Elfo oscuro" },
+  { id: 4, descripcion: "Orco" },
+  { id: 5, descripcion: "Enano" },
+  { id: 6, descripcion: "Kamael" },
+];
+
+//Profesiones
+const profesion = [
+  //Humanos
+  { id: 1, descripcion: "Dreadnought" },
+  { id: 2, descripcion: "Duelist" },
+  { id: 3, descripcion: "Phoenix Knight" },
+  { id: 4, descripcion: "Hell Knight" },
+  { id: 5, descripcion: "Adventurer" },
+  { id: 6, descripcion: "Sagittarius" },
+  { id: 7, descripcion: "Archmage" },
+  { id: 8, descripcion: "Soultaker" },
+  { id: 9, descripcion: "Arcana Lord" },
+  { id: 10, descripcion: "Cardinal" },
+  { id: 11, descripcion: "Hierophant" },
+  //Elfos
+  { id: 12, descripcion: "Sword Muse" },
+  { id: 13, descripcion: "Wind Rider" },
+  { id: 14, descripcion: "Moonlight Sentinel" },
+  { id: 15, descripcion: "Mystic Muse" },
+  { id: 16, descripcion: "Elemental Master" },
+  { id: 17, descripcion: "Eva's Saint" },
+  { id: 18, descripcion: "Eva's Templar" },
+  //Elfos oscuros
+  { id: 19, descripcion: "Shillien Templar" },
+  { id: 20, descripcion: "Spectral Dancer" },
+  { id: 21, descripcion: "Ghost Hunter" },
+  { id: 22, descripcion: "Ghost Sentinel" },
+  { id: 23, descripcion: "Storm Screamer" },
+  { id: 24, descripcion: "Spectral Master" },
+  { id: 25, descripcion: "Shillien Saint" },
+  //Enanos
+  { id: 26, descripcion: "Fortune Seeker" },
+  { id: 27, descripcion: "Maestro" },
+  //Orcos
+  { id: 28, descripcion: "Titan" },
+  { id: 29, descripcion: "Grand Khavatari" },
+  { id: 30, descripcion: "Dominator" },
+  { id: 31, descripcion: "Doomcryer" },
+  //Kamael
+  { id: 32, descripcion: "Doombringer" },
+  { id: 33, descripcion: "Soul Hound (M)" },
+  { id: 34, descripcion: "Soul Hound (F)" },
+  { id: 35, descripcion: "Trickster" },
+  { id: 36, descripcion: "Judicator" },
+];
+
+//Armas
+const arma = [
+  { id: 1, tipo: "Espada" },
+  { id: 2, tipo: "Dual" },
+  { id: 3, tipo: "Daga" },
+  { id: 4, tipo: "Blunt" },
+  { id: 5, tipo: "Fist" },
+  { id: 6, tipo: "Arco" },
+  { id: 7, tipo: "Crossbow" },
+  { id: 8, tipo: "Pole" },
+  { id: 9, tipo: "Rapier" },
+  { id: 10, tipo: "Ancient sword" }
+];
+
+const rol = [
+  { id: 1, descripcion: "Asesino" },
+  { id: 2, descripcion: "Guerrero" },
+  { id: 3, descripcion: "Nuker" },
+  { id: 4, descripcion: "Healer" },
+  { id: 5, descripcion: "Enchanter" },
+  { id: 6, descripcion: "Tanque" },
+  { id: 7, descripcion: "Rango" }
+];
+
+//Crear humanos
+const Creacion(raza, profesion, arma, rol) {
+  this.raza = raza;
+  this.profesion =profesion;
+  this.arma = arma;
+  this.rol = rol
+}
+
+const crear = new Creacion("humano", "Duelist", "Espada", "Asesino")
+crear.raza()
+
+
+//Parte 3
+//Creacion
+function crearPersonaje(raza, profesion, arma, rol) {
+  this.raza = raza;
+  this.profesion = profesion;
+  this.arma = arma;
+  this.rol = rol;
+}
+
+//Primeros PJS
+const ghostHunter = new crearPersonaje(
+  "Elfo oscuro",
+  "Ghost Hunter",
+  "Daga",
+  "Rogue"
+);
+
+const phoenixKnight = new crearPersonaje(
+  "Humano",
+  "Phoenix Knight",
+  "Espada",
+  "Tanque"
+);
+
+const mysticMuse = new crearPersonaje(
+  "Elfo",
+  "Mystic Muse",
+  "Espada",
+  "Support"
+);
+
+const Doombringer = new crearPersonaje(
+  "Kamael",
+  "Doombringer",
+  "Ancient Sword",
+  "Guerrero"
+);
+
+const Maestro = new crearPersonaje("Enano", "Maestro", "Martillo", "Guerrero");
+
+const Overlord = new crearPersonaje("Orco", "Overlord", "Blunt", "Support");
+
+const listaProfesiones = [
+  ghostHunter,
+  phoenixKnight,
+  mysticMuse,
+  Doombringer,
+  Maestro,
+  Overlord,
+];
+
+const agregarProfesiones = listaProfesiones.push();
+agregarProfesiones();
+
+console.log(
+  "La lista de profesiones consta de " + listaProfesiones.length + " opciones"
+);
+
+//Ultimo borrador
+ Profesion: "Dreadnought",
+    Rol: "Guerrero",
+    Arma: "Pole",
+
+    Profesion: "Duelist",
+    Rol: "Guerrero",
+    Arma: "Dualsword",
+
+    Profesion: "Phoenix Knight",
+    Rol: "Tanque",
+    Arma: "Espada",
+
+    Profesion: "Hell Knight",
+    Rol: "Tanque",
+    Arma: "Espada",
+
+    Profesion: "Adventurer",
+    Rol: "Rogue",
+
+    Profesion: "Sagittarius",
+    Rol: "Rogue",
+    Arma: "Arco",
+
+    Profesion: "Archmage",
+    Rol: "Nuker",
+    Arma: "Espada",
+
+    Profesion: "Soultaker",
+    Rol: "Nuker",
+    Arma: "Espada",
+
+    Profesion: "Arcana Lord",
+    Rol: "Pet master",
+    Arma: "Espada",
+
+    Profesion: "Cardinal",
+    Rol: "Support",
+    Arma: "Espada",
+
+    Profesion: "Hierophant",
+    Rol: "Support",
+    Arma: "Espada",
+
+
+
+    Profesion: "Eva's Templar",
+    Rol: "Tanque",
+    Arma: "Espada",
+
+    Profesion: "Sword Muse",
+    Rol: "Support",
+    Arma: "Espada",
+
+    Profesion: "Wind Rider",
+    Rol: "Rogue",
+    Arma: "Daga",
+
+    Profesion: "Moonlight Sentinel",
+    Rol: "Rogue",
+    Arma: "Arco",
+
+    Profesion: "Mystic Muse",
+    Rol: "Nuker",
+    Arma: "Espada",
+
+    Profesion: "Elemental Master",
+    Rol: "Pet master",
+    Arma: "Espada",
+
+    Profesion: "Eva's Saint",
+    Rol: "Support",
+    Arma: "Espada",
+
+
+
+    Profesion: "Shillien Templar",
+    Rol: "Tanque",
+    Arma: "Blunt",
+
+    Profesion: "Spectral Dancer",
+    Rol: "Support",
+    Arma: "Espada",
+
+    Profesion: "Ghost Hunter",
+    Rol: "Rogue",
+    Arma: "Daga",
+
+    Profesion: "Ghost Sentinel",
+    Rol: "Rogue",
+    Arma: "Arco",
+
+    Profesion: "Storm Screamer",
+    Rol: "Nuker",
+    Arma: "Blunt",
+
+    Profesion: "Spectral Master",
+    Rol: "Pet master",
+    Arma: "Espada",
+
+    Profesion: "Shillien Saint",
+    Rol: "Support",
+    Arma: "Blunt",
+
+
+    Profesiones: "Titan",
+    Rol: "Guerrero",
+    Arma: "Espada de dos manos",
+
+    Profesiones: "Grand Khavatari",
+    Rol: "Guerrero",
+    Arma: "Garras",
+
+    Profesiones: "Dominator",
+    Rol: "Support",
+    Arma: "Blunt",
+
+    Profesiones: "Doomcryer",
+    Rol: "Support",
+    Arma: "Blunt",
+
+
+
+    Profesiones: "Doombringer",
+    Rol: "Guerrero",
+    Arma: "Ancient sword",
+
+    Profesiones: "Soul Hound",
+    Rol: "Guerrero",
+    Arma: "Rapier",
+
+    Profesiones: "Trickster",
+    Rol: "Rogue",
+    Arma: "Crossbow",
+
+
+
+    Profesiones: "Fortune Seeker",
+    Rol: "Guerrero",
+    Arma: "Martillo",
+
+    Profesiones: "Maestro",
+    Rol: "Guerrero",
+    Arma: "Martillo", */
+
+//-----------------------------------------------------------------------
+
+/* document.write(` 
+<div class="menu-profesiones">
+<div class="Humanos">
+<h2>Profesiones de los Humanos.</h2>
+    <ul>
+    <li>Dreadnought</li>
+    <li>Duelist</li>
+    <li>Phoenix Knight</li>
+    <li>Hell Knight</li>
+    <li>Adventurer</li>
+    <li>Sagittarius</li>
+    <li>Archmage</li>
+    <li>Soultaker</li>
+    <li>Arcana Lord</li>
+    <li>Cardinal</li>
+    <li>Hierophant</li>
+</ul>
+</div>
+
+  <div class="Elfos">
+      <h2>Profesiones de los Elfos</h2>
+    <ul>
+      <li>Eva's Templar</li>
+      <li>Sword Muse</li>
+      <li>Wind Rider</li>
+      <li>Moonlight Sentinel</li>
+      <li>Mystic Muse</li>
+      <li>Elemental Master</li>
+      <li>Eva's Saint</li>
+    </ul>
+    </div>
+
+        <div class="Elfos-oscuros">
+    <h2>Profesiones de  los Elfos oscuros</h2>
+    <ul>
+      <li>Shillien Templar</li>
+      <li>Spectral Dancer</li>
+      <li>Ghost Hunter</li>
+      <li>Ghost Sentinel</li>
+      <li>Storm Screamer</li>
+      <li>Spectral Master</li>
+      <li>Shillien Saint</li>
+    </ul>
+    </div>
+
+        <div class="Orcos">
+      <h2>Profesiones de los Orcos</h2>
+    <ul>
+      <li>Titan</li>
+      <li>Grand Khavatari</li>
+      <li>Dominator</li>
+      <li>Doomcryer</li>
+    </ul>
+    </div>
+
+        <div class="Enanos">
+    <h2>Profesiones de los Enanos</h2>
+    <ul>
+      <li>Fortune Seeker</li>
+      <li>Maestro</li>
+    </ul>
+    </div>
+
+        <div class="Kamael">
+    <h2>Profesiones de los Kamael</h2>
+    <ul>
+      <li>Doombringer</li>
+      <li>Soul Hound</li>
+      <li>Trickster</li>
+    </ul>
+    </div>
+  </div>`);
+
+document.write(
+  `
+    <button type="al-azar"></button>
+    `
+);
+
+const dale = document.addEventListener("click", revelar);
+{
+  function revelar(profesion, raza, rol, arma) {
+    this.profesion = profesion;
+    this.raza = raza;
+    this.rol = rol;
+    this.arma = arma;
+  }
+}
+const personajeRogue = new revelar(
+  "Ghost Hunter",
+  "elfo oscuro",
+  "rogue",
+  "daga"
+);
+console.log(
+  "Tu personaje es " +
+    personajeRogue.profesion +
+    ", su raza es " +
+    personajeRogue.raza +
+    ", su rol es " +
+    personajeRogue.rol +
+    " y el arma que lleva es una " +
+    personajeRogue.arma +
+    "."
+);
+ */
+
+
+
+
+ /* 
+
+
+ 
+
+class Razas {
+  constructor(id, nombre) {
+    this.id = id;
+    this.nombre = nombre;
+
+    const humano = new Razas(1, humano);
+    const elfo = new Razas(2, elfo);
+    const elfoOscuro = new Razas(3, elfoOscuro);
+    const orco = new Razas(4, orco);
+    const enano = new Razas(5, enano);
+    const kamael = new Razas(6, kamael);
+  } 
+}
+
+/* for (const raza of razas) {
+  let contenedor = document.createElement("div");
+  contenedor.innerHTML = `
+ <p>${razas.descripcion}</p>`;
+  document.body.appendChild(contenedor);
+} */
+
+
+
+
+//Iba bien 
+function verProfesiones() {
+  const profesiones = [
+    { id: 1, descripcion: "Dreadnought" },
+    { id: 2, descripcion: "Duelist" },
+    { id: 3, descripcion: "Phoenix Knight" },
+    { id: 4, descripcion: "Hell Knight" },
+    { id: 5, descripcion: "Adventurer" },
+    { id: 6, descripcion: "Sagittarius" },
+    { id: 7, descripcion: "Archmage" },
+    { id: 8, descripcion: "Soultaker" },
+    { id: 9, descripcion: "Arcana Lord" },
+    { id: 10, descripcion: "Cardinal" },
+    { id: 11, descripcion: "Hierophant" },
+    { id: 12, descripcion: "Sword Muse" },
+    { id: 13, descripcion: "Wind Rider" },
+    { id: 14, descripcion: "Moonlight Sentinel" },
+    { id: 15, descripcion: "Mystic Muse" },
+    { id: 16, descripcion: "Elemental Master" },
+    { id: 17, descripcion: "Eva's Saint" },
+    { id: 18, descripcion: "Eva's Templar" },
+    { id: 19, descripcion: "Shillien Templar" },
+    { id: 20, descripcion: "Spectral Dancer" },
+    { id: 21, descripcion: "Ghost Hunter" },
+    { id: 22, descripcion: "Ghost Sentinel" },
+    { id: 23, descripcion: "Storm Screamer" },
+    { id: 24, descripcion: "Spectral Master" },
+    { id: 25, descripcion: "Shillien Saint" },
+    { id: 26, descripcion: "Fortune Seeker" },
+    { id: 27, descripcion: "Maestro" },
+    { id: 28, descripcion: "Titan" },
+    { id: 29, descripcion: "Grand Khavatari" },
+    { id: 30, descripcion: "Dominator" },
+    { id: 31, descripcion: "Doomcryer" },
+    { id: 32, descripcion: "Doombringer" },
+    { id: 33, descripcion: "Soul Hound (M)" },
+    { id: 34, descripcion: "Soul Hound (F)" },
+    { id: 35, descripcion: "Trickster" },
+    { id: 36, descripcion: "Judicator" },
+  ];
+
+  for (const profesion of profesiones) {
+    let contenedor = document.createElement("div");
+    contenedor.innerHTML = `<ul>
+  <li><p> Profesion: ${profesiones.descripcion}</p></li>
+  </ul>`;
+    document.body.appendChild(contenedor);
+  }
+}
+console.log(verProfesiones());
+console.log(verRazas());
+
+
+
+//Ultimo intento
+/* function validarNumeros() {
+  let numeroUno = parseInt(document.getElementById("numUno").value);
+  let numeroDos = parseInt(document.getElementById("numDos").value);
+  let numeroTres = parseInt(document.getElementById("numTres").value);
+
+  if (numeroUno > numeroDos) {
+    if (numeroUno > numeroTres) {
+      document.getElementById("mensaje").innerHTML = numeroUno + " es mayor";
+    } else {
+      document.getElementById("mensaje").innerHTML = numeroTres + " es mayor";
+    }
+  } else {
+    if (numeroDos > numeroTres) {
+      document.getElementById("mensaje").innerHTML = numeroDos + " es mayor";
+    } else {
+      document.getElementById("mensaje").innerHTML = numeroTres + " es mayor";
+    }
+  }
+}
+ */
+//---------------------------------------------------------------------------------
+
+//Personajes
+
+const windRider = {
+  id: 1,
+  profesion: "wind rider",
+  raza: "elfo",
+  rol: "rogue",
+};
+
+const adventurer = {
+  id: 2,
+  profesion: "adventurer",
+  raza: "humano",
+  rol: "rogue",
+};
+
+const ghostHunter = {
+  id: 3,
+  profesion: "ghost hunter",
+  raza: "elfo oscuro",
+  rol: "rogue",
+};
+
+const evaTemplar = {
+  id: 4,
+  profesion: "eva's templar",
+  raza: "elfo",
+  rol: "tanque",
+};
+
+const phoenixKnight = {
+  id: 5,
+  profesion: "phoenix knight",
+  raza: "humano",
+  rol: "tanque",
+};
+
+const shillienTemplar = {
+  id: 6,
+  profesion: "shillien templar",
+  raza: "elfo oscuro",
+  rol: "tanque",
+};
+
+// -----------------------------------------------------
+
+const enviar = document.querySelector("boton");
+let windRider = 1;
+
+/* const selectorPj = document.querySelector("selectorPj"); */
+const leerResultados = enviar.addEventListener("click", (e) => {
+  switch (windRider) {
+    case 1:
+      return "wind rider";
+      break;
+    case 2:
+      return "winddd rider";
+      break;
+    case 3:
+      return "windfff rider";
+      break;
+    case 4:
+      return "windggg rider";
+      break;
+    case 5:
+      return "windsss rider";
+      break;
+    case 6:
+      return "wind aaarider";
+      break;
+
+    default:
+      return "Ingresa un número valido";
+  }
+});
+
+
+
+//se acerca la hora 
+
+/* //Pre
+const resultado = document.querySelector("#resultado");
+const img = document.createElement("img");
+img.src = "./img/gh.jpg";
+resultado.appendChild(img);
+
+//agregar imagen
+const gh = document.querySelector("#gh");
+gh.addEventListener("click", () {
+
+});
+
+const wr = document.querySelector("#wr");
+wr.addEventListener("click", function mostrarWr() {
+  s;
+});
+
+const adv = document.querySelector("#adv");
+adv.addEventListener("click", function mostrarAdv() {
+  s;
+});
+
+const st = document.querySelector("#st");
+st.addEventListener("click", function mostrarSt() {
+  s;
+});
+
+const et = document.querySelector("#et");
+et.addEventListener("click", function mostrarEt() {
+  s;
+});
+
+const pk = document.querySelector("#pk");
+pk.addEventListener("click", function mostrarPk() {
+  s;
+});
+ */
