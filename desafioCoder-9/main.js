@@ -33,5 +33,5 @@ seleccion.addEventListener("click", function () {
 
 $("body").prepend('<button id="btnjq  uery">CLICK</button>');
 on("click", () => {
-  console.log("Tu vieja");
+  console.log("asd123");
 });
