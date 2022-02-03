@@ -31,7 +31,7 @@ seleccion.addEventListener("click", function () {
   }
 });
 
-$("body").prepend('<button id="btnjq  uery">CLICK</button>');
+$("body").prepend('<button id="btnjquery">Click</button>');
 on("click", () => {
   console.log("asd123");
 });
