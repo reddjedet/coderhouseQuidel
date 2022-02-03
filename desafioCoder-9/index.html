@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- script agregado por sugerencia de una goolgeada -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <title>Selector de personaje (Lineage 2)</title>
@@ -23,13 +25,13 @@
 
 
   <form action="">
-    <label for="fname">Escribe un nombre para tu personaje:</label><br>
+    <label for="nombre">Escribe un nombre para tu personaje: </label><br>
     <input type="text" id="nombre" name="nombre">
-    <input type="submit">
+    <button name="boton" type="button">Submit</button>
     <hr>
     <label for="name">Selecciona uno:</label>
     <br>
-    <select id="personaje" name="personaje">
+    <select id="seleccion" name="personaje">
       <option value="">-</option>
       <option value="p1">Ghost Hunter</option>
       <option value="p2">Wind Rider</option>

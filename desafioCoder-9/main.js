@@ -1,17 +1,18 @@
-/* const ghBg = document.getElementsById("gh");
-const wrBg = document.getElementsById("wr");
-const advBg = document.getElementsById("adv");
-const stBg = document.getElementsById("st");
-const etBg = document.getElementsById("et");
-const pkBg = document.getElementsById("pk"); */
-const div = document.createElement("div");
+window.addEventListener("load", function () {
+  console.log("Todos los elementos de la ventana están cargados ");
+});
 
-const selectEl = document.getElementById("personaje");
-selectEl.addEventListener("click", function () {
+const div = document.createElement("div");
+const h3 = document.createElement("h3");
+const seleccion = document.getElementById("seleccion");
+seleccion.addEventListener("select", () => {
+  h3.appendChild(personaje.value);
+});
+
+seleccion.addEventListener("click", function () {
   if (this.value == "p1") {
     document.body.style.backgroundImage = "url('./img/gh.jpg')";
     document.body.style.backgroundRepeat = "no-repeat";
-    //agregar
   } else if (this.value == "p2") {
     document.body.style.backgroundImage = "url('./img/wr.jpg')";
     document.body.style.backgroundRepeat = "no-repeat";
@@ -30,8 +31,7 @@ selectEl.addEventListener("click", function () {
   }
 });
 
-const h3 = document.createElement("h3");
-const input = document.getElementsByTagName("input");
-input.addEventListener("submit", () => {
-  return h3.appendChild(input.value);
+$("body").prepend('<button id="btnjq  uery">CLICK</button>');
+on("click", () => {
+  console.log("Tu vieja");
 });
