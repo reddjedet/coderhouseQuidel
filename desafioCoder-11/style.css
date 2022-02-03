@@ -1,0 +1,21 @@
+* {
+  background-position-x: 0%;
+  background-position-y: -34%;
+  box-sizing: border-box;
+}
+
+body {
+  background-position-x: 25%;
+  background-repeat: no-repeat;
+}
+
+body.dark {
+  background: #111111;
+  color: azure;
+}
+
+.container {
+  display: block;
+  margin-left: 40%;
+  margin-top: 5%;
+}
