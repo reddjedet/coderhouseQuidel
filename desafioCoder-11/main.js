@@ -10,66 +10,96 @@ const li = document.createElement(`li`);
 const formSeleccion = document.querySelector(".form-selection");
 const colocarImagen = document.querySelector(".colocar-imagen");
 const pruebaNombre = document.querySelector(".prueba-nombre");
-const img = document.createElement("img");
+let img = document.createElement("img");
 
 //appends
 
-class personajesLista{
-constructor(raza, rol, arma, imagen){
-this.raza = raza;
-this.rol = rol;
-this.arma = arma;
-this.imagen = imagen;
+class personajesLista {
+  constructor(raza, rol, arma, imagen) {
+    this.raza = raza;
+    this.rol = rol;
+    this.arma = arma;
+    this.imagen = imagen;
+  }
+}
 
-}}
+const ghostHunter = new personajesLista(
+  "Elfo oscuro",
+  "Daguero",
+  "Daga",
+  "url('./img/gh.png')"
+);
 
-const ghostHunter = new personajesLista("Elfo oscuro", "Daguero", "Daga", "url('./img/gh.png')")
+const windRider = new personajesLista(
+  "Elfo",
+  "Daguero",
+  "Daga",
+  "url('./img/wr.png')"
+);
 
-const windRider = new personajesLista("Elfo", "Daguero", "Daga", "url('./img/wr.png')")
+const adventurer = new personajesLista(
+  "Humano",
+  "Daguero",
+  "Daga",
+  "url('./img/advenh.png')"
+);
 
-const adventurer = new personajesLista("Humano", "Daguero", "Daga", "url('./img/advenh.png')")
+const shillienTemplar = new personajesLista(
+  "Elfo oscuro",
+  "Tanque",
+  "Espada",
+  "url('./img/st.png')"
+);
 
-const shillienTemplar = new personajesLista("Elfo oscuro", "Tanque", "Espada", "url('./img/st.png')")
+const evaTemplar = new personajesLista(
+  "Elfo",
+  "Tanque",
+  "Espada",
+  "url('./img/et.png')"
+);
 
-const evaTemplar = new personajesLista("Elfo", "Tanque", "Espada", "url('./img/et.png')")
-
-const phoenixKnight = new personajesLista("Humano", "Tanque", "Espada", "url('./img/pk.png')")
-
+const phoenixKnight = new personajesLista(
+  "Humano",
+  "Tanque",
+  "Espada",
+  "url('./img/pk.png')"
+);
 
 //array integrador
 const arregloPersonajes = [];
 
-arregloPersonajes.push(ghostHunter, windRider, adventurer, shillienTemplar, phoenixKnight)
+arregloPersonajes.push(
+  ghostHunter,
+  windRider,
+  adventurer,
+  shillienTemplar,
+  phoenixKnight
+);
 
+//lista de personajes completa
 console.log(arregloPersonajes);
 
-for(let personajesLista of arregloPersonajes){
-$("#seleccion").append(<p>$(.)</p>){
-<p>$(windRider.imagen)</p> 
-<p>$(adventurer.imagen)</p> 
-<p>$(shillienTemplar.imagen)</p> 
-<p>$(phoenixKnight.imagen)</p> 
-)
+/* for (let personaje of arregloPersonajes) {
+  //let antes era let personajesLista
+  $("#seleccion").append(`
+    <p>personaje.imagen</p>
+    `);
 }
-
-const entregaPantalla = arregloPersonajes.filter((imagen) => {
-return personajesLista.pais == "argentina"
-})
-
-
-
-
-
+ */
 // Input Nombre
 $("#append").click(function () {
   $(".nombre-personaje").text($("#Input").val());
 });
 
 //Selector
+/* for (let personaje of arregloPersonajes) { */
+arregloPersonajes.forEach(function (imagen) {
+  img.setAttribute("src", imagen);
+  $("#seleccion").append(img);
+});
+
+/* //Selector anterior
 seleccion.addEventListener("change", function () {
   personajesLista.find((imagen) => personajesLista.imagen == imagen);
 });
-
-
-
-
+ */

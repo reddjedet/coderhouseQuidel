@@ -1,0 +1,4 @@
+//del for 
+const resultadoFinal = arregloPersonajes.filter((imagen) => {
+  return personaje.imagen;
+});
