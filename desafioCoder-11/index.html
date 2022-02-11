@@ -13,44 +13,54 @@
   <title>Selector de personaje (Lineage 2)</title>
 </head>
 
-<button class="switch" id="switch">
-  <span><i class="fas fa-sun"></i></span>
-  <span><i class="fas fa-moon"></i></span>
-</button>
-<h5>Lineage 2</h5>
+<body>
+
+
+  <button class="switch" id="switch">
+    <span><i class="fas fa-sun"></i></span>
+    <span><i class="fas fa-moon"></i></span>
+  </button>
+  <h5>Lineage 2</h5>
 
 
 
 
 
-<div class="container">
-  <div class="nombre-personaje">Nombre: </div>
-  <textarea id="Input" cols="35" rows="1" placeholder="Inserte un nombre para su personaje"></textarea>
-  <br>
-  <button id="append">Ingresar</button>
+
+  <div>
+
+    <div class="container">
+      <div class="nombre-personaje">Nombre: </div>
+      <input type="text" id="texto" placeholder="Nombre para su personaje">
+      <button id="aceptar-nombre">Aceptar</button>
+
+      <br>
+
+      <select class="falso">
+        <option id="-" value="-"> - </option>
+        <option id="gh" value="Ghost Hunter">Ghost Hunter</option>
+        <option id="wr" value="Wind Rider">Wind Rider</option>
+        <option id="adven" value="Adventurer">Adventurer</option>
+        <option id="st" value="Shillien Templar">Shillien Templar</option>
+        <option id="et" value="Eva's Templar">Eva's Templar</option>
+        <option id="pk" value="Phoenix Knight">Phoenix Knight</option>
+      </select>
+      <button id="button-reiniciar">Reiniciar</button>
+
+      <h2>Nombre</h2>
+      <h3>Profesión</h3>
+      <h4>Descripción</h4>
+
+
+    </div>
 
 
 
-  <form action="" id="form-seleccion">
-    <br>
-    <label for="text">Selecciona un personaje:</label>
-    <select id="seleccion" name="personaje">
-      <option value="">-</option>
-      <option value="p1">Ghost Hunter</option>
-      <option value="p2">Wind Rider</option>
-      <option value="p3">Adventurer</option>
-      <option value="p4">Shillien Templar</option>
-      <option value="p5">Eva's Templar</option>
-      <option value="p6">Phoenix Knight</option>
-    </select>
-  </form>
-</div>
 
-<div class="colocar-imagen"></div>
-<div class="prueba-nombre"></div>
 
-<script src="main.js"></script>
-<script src="lights.js"></script>
+
+    <script src="main.js"></script>
+    <script src="darkMode.js"></script>
 
 
 
