@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- script agregado por sugerencia de una goolgeada -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/e77a98ef70.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Selector de personaje (Lineage 2)</title>
+</head>
+
+<body>
+
+
+  <button id="switch">
+    <span><i class="fas fa-sun"></i></span>
+    <span><i class="fas fa-moon"></i></span>
+  </button>
+  <h5>Lineage 2</h5>
+
+
+  <div>
+    <div class="container">
+      <div class="nombre-personaje">Nombre: </div>
+      <input type="text" id="texto" placeholder="Nombre para su personaje">
+      <button id="aceptar-nombre">Aceptar</button>
+      <br>
+      <select class="falso">
+        <option id="-" value="-"> - </option>
+        <option id="gh" value="Ghost Hunter">Ghost Hunter</option>
+        <option id="wr" value="Wind Rider">Wind Rider</option>
+        <option id="adven" value="Adventurer">Adventurer</option>
+        <option id="st" value="Shillien Templar">Shillien Templar</option>
+        <option id="et" value="Eva's Templar">Eva's Templar</option>
+        <option id="pk" value="Phoenix Knight">Phoenix Knight</option>
+      </select>
+      <br>
+      <hr>
+      <button id="boton-reiniciar">Reiniciar</button>
+
+      <h2></h2>
+      <h3></h3>
+
+      <div id="gh-desc" class="descripcion">
+        <h4>Ghost Hunter</h4>
+        <p>
+          Es la tercera clase de guerrero de la raza elfa oscura del nivel 76 al 85.
+          Dicen que se mueven increíblemente rápido, se acercan imperceptiblemente y dan en el blanco con unos cuantos
+          golpes
+          precisos, sin darle tiempo al enemigo para responder con un ataque. Los Ghost Hunter son asesinos
+          mercenarios
+          que han
+          tenido éxito en su oficio, que han adquirido nuevas habilidades mortales y habilidades de combate
+          extremadamente
+          útiles.</p>
+        <img src="./img/ghdesc.jpg" alt="imagen" class="img-desc">
+        <p>Stats</p>
+        <table border="1" cellpadding="1">
+          <tbody>
+            <tr>
+              <td>STR</td>
+              <td>41</td>
+              <td>DEX</td>
+              <td>34</td>
+              <td>CON</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>INT</td>
+              <td>25</td>
+              <td>WIT</td>
+              <td>12</td>
+              <td>MEN</td>
+              <td>26</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="https://l2note.com/en/ghost-hunter-2/">Fuente</a>
+      </div>
+
+      <div id="wr-desc" class="descripcion">
+        <h4>Shillien Templar</h4>
+        <p>
+          Es la tercera clase de guerrero orientada a tanque de la raza elfa oscura del nivel 76 al 85.
+          Los shillien templar más leales tarde o temprano reciben el título de Templarios, volviéndose aún más
+          fuertes
+          y
+          resistentes. También están entrenados para usar su escudo para atacar.</p>
+        <img src="./img/wrdesc.jpg" alt="imagen" class="img-desc">
+        <p>Stats</p>
+        <table border="1" cellpadding="1">
+          <tbody>
+            <tr>
+              <td>STR</td>
+              <td>41</td>
+              <td>DEX</td>
+              <td>34</td>
+              <td>CON</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>INT</td>
+              <td>25</td>
+              <td>WIT</td>
+              <td>12</td>
+              <td>MEN</td>
+              <td>26</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="https://l2note.com/en/shillien-templar-2/">Fuente</a>
+      </div>
+
+      <div id="adven-desc" class="descripcion">
+        <h4>Adventurer</h4>
+        <p>
+          Es la tercera clase de guerrero humano del nivel 76 al 85.
+          Los adventurers son vagabundos que durante mucho tiempo han cambiado el calor del hogar por el polvo de los
+          caminos. Sin
+          embargo, si para los cazadores de tesoros viajar es una forma de ganar dinero, para los aventureros las
+          carreteras son
+          una forma de vida. Todavía son leales a su daga, pero sus habilidades de ataque han aumentado.</p>
+        <img src="./img/advendesc.jpg" alt="imagen" class="img-desc">
+        <p>Stats</p>
+        <table border="1" cellpadding="1">
+          <tbody>
+            <tr>
+              <td>STR</td>
+              <td>40</td>
+              <td>DEX</td>
+              <td>30</td>
+              <td>CON</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <td>INT</td>
+              <td>21</td>
+              <td>WIT</td>
+              <td>11</td>
+              <td>MEN</td>
+              <td>25</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="https://l2note.com/en/adventurer-2/">Fuente</a>
+      </div>
+
+      <div id="st-desc" class="descripcion">
+        <h4>Shillien Templar</h4>
+        <p>
+          Es la tercera clase de guerrero orientada a tanque de la raza elfa oscura del nivel 76 al 85.
+          Los shillien templar más leales tarde o temprano reciben el título de Templarios, volviéndose aún más
+          fuertes
+          y
+          resistentes. También están entrenados para usar su escudo para atacar.</p>
+        <img src="./img/stdesc.jpg" alt="imagen" class="img-desc">
+        <p>Stats</p>
+        <table border="1" cellpadding="1">
+          <tbody>
+            <tr>
+              <td>STR</td>
+              <td>41</td>
+              <td>DEX</td>
+              <td>34</td>
+              <td>CON</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>INT</td>
+              <td>25</td>
+              <td>WIT</td>
+              <td>12</td>
+              <td>MEN</td>
+              <td>26</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="https://l2note.com/en/shillien-templar-2/">Fuente</a>
+      </div>
+
+      <div id="et-desc" class="descripcion">
+        <h4>Eva's Templar</h4>
+        <p>
+          Es la tercera clase de guerrero orientada a tanque de la raza elfa del nivel 76 al 85.
+          Los eva's templar más leales tarde o temprano reciben el título de Templarios, volviéndose aún más fuertes y
+          resistentes. Los Templarios mejoran sus habilidades con el escudo, que se convierte no sólo en un medio de
+          defensa, sino
+          también en un arma de ataque.</p>
+        <img src="./img/etdesc.jpg" alt="imagen" class="img-desc">
+        <p>Stats</p>
+        <table border="1" cellpadding="1">
+          <tbody>
+            <tr>
+              <td>STR</td>
+              <td>36</td>
+              <td>DEX</td>
+              <td>35</td>
+              <td>CON</td>
+              <td>36</td>
+            </tr>
+            <tr>
+              <td>INT</td>
+              <td>23</td>
+              <td>WIT</td>
+              <td>14</td>
+              <td>MEN</td>
+              <td>26</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="https://l2note.com/en/evas-templar-2/">Fuente</a>
+      </div>
+
+      <div id="pk-desc" class="descripcion">
+        <h4>Phoenix Knight</h4>
+        <p>
+          Es la tercera clase de guerrero orientada a tanque de la raza humana del nivel 76 al 85.
+          Pocos de los Paladines son capaces de convertirse en el Caballero Fénix, llevando la luz y la Verdadera Fe a
+          los
+          rincones más remotos de este mundo. Sin embargo, el que pudo resistir todas las pruebas recibe como
+          recompensa
+          nuevas
+          habilidades excepcionales, incluida la capacidad, como el ave Fénix, de engañar a la muerte al resucitar de
+          entre los
+          muertos.</p>
+        <img src="./img/pkdesc.jpg" alt="imagen" class="img-desc">
+        <p>Stats</p>
+        <table border="1" cellpadding="1">
+          <tbody>
+            <tr>
+              <td>STR</td>
+              <td>40</td>
+              <td>DEX</td>
+              <td>30</td>
+              <td>CON</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <td>INT</td>
+              <td>21</td>
+              <td>WIT</td>
+              <td>11</td>
+              <td>MEN</td>
+              <td>25</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="https://l2note.com/en/phoenix-knight-2/">Fuente</a>
+      </div>
+
+
+
+
+
+      <script src="darkMode.js"></script>
+      <script src="./main.js"></script>
+
+</body>
+
+</html>
