@@ -1,18 +1,16 @@
-$(document).ready(function () {
-  console.log("Página lista");
-});
-
 let h2 = document.querySelector("h2");
 let h3 = document.querySelector("h3");
 let h4 = document.querySelector("h4");
 let html = document.querySelector("body");
 let select = document.querySelector("select");
+select.value = "-";
 let entradaNombre = document.querySelector("#texto");
 let btn = document.querySelector("#boton-reiniciar");
 let nombre = document.querySelector(".nombre-personaje");
 let aceptar = document.querySelector("#aceptar-nombre");
-let descripcion = (document.querySelectorAll(".descripcion").style.display =
-  "none");
+let descripciones = document.querySelectorAll(".descricpion");
+
+/* $('img[name="desc"]').css("display", "none"); */
 
 //Descripciones
 let ghDesc = document.querySelector("#gh-desc");
@@ -55,49 +53,45 @@ while (select.classList == "verdadero") {
 
 //Reiniciar
 btn.addEventListener("click", () => {
-  select.value = "-";
+  /* descripcion.style.display = "none"; */
   h3.textContent = "";
   h2.textContent = "";
   html.style.backgroundImage = "";
-  /* descripcion.style.display = "none"; */
-  if (descripcion.style.display == "block") {
-    descripcion.style.display = "none";
-  } else {
-    descripcion.style.display = "block";
+  entradaNombre.value = " ";
+  for (let descripcion of descripciones) {
+    if (descripcion.style.display != "none") {
+      this.style.display === "none";
+    }
   }
 });
 
-aceptar.addEventListener("click", llenarH2);
-function llenarH2() {
+//input en H2
+aceptar.addEventListener("click", mostrarNombre);
+function mostrarNombre() {
   h2.innerHTML = entradaNombre.value;
 }
 
-//Profesion con imagen
-select.addEventListener("change", imagen);
-function imagen() {
-  var eleccion = select.value;
+//Imagen del Select
+var selectArray = new Array();
+$("select option").each(function () {
+  selectArray.push($(this).val());
+});
 
-  if (eleccion == " - ") {
-    html.style.backgroundImage = " ";
-  } else if (eleccion == "Ghost Hunter") {
-    html.style.backgroundImage = "url('./img/gh.png')";
-    ghDesc.style.display = "block";
-  } else if (eleccion == "Wind Rider") {
-    html.style.backgroundImage = "url('./img/wr.png')";
-    wrDesc.style.display = "block";
-  } else if (eleccion == "Adventurer") {
-    html.style.backgroundImage = "url('./img/adven.png')";
-    advenDesc.style.display = "block";
-  } else if (eleccion == "Shillien Templar") {
-    html.style.backgroundImage = "url('./img/st.png')";
-    stDesc.style.display = "block";
-  } else if (eleccion == "Eva's Templar") {
-    html.style.backgroundImage = "url('./img/et.png')";
-    etDesc.style.display = "block";
-  } else if (eleccion == "Phoenix Knight") {
-    html.style.backgroundImage = "url('./img/pk.png')";
-    pkDesc.style.display = "block";
-  }
+/* var x = document.getElementById("mySelect");
+var optionVal = new Array();
+for (i = 0; i < x.length; i++) {
+  selectArray.push(x.options[i].text);
+} */
+
+for (selectArray = 0; selectArray <= 7; selectArray++) {
+  //background
+  this.html.style.backgroundImage = Personaje.imagen;
+  //descripcion
+  this.style.display = "block";
 }
 
 $("h5").css("border", "1px solid black");
+
+$(document).ready(function () {
+  console.log("Página lista");
+});
