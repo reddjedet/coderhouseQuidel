@@ -1,3 +1,38 @@
+/* 
+
+$(".container-gh").hide();
+$(".container-wr").hide();
+$(".container-adven").hide();
+$(".container-st").hide();
+$(".container-et").hide();
+$(".container-pk").hide();
+$(".container-gs").hide();
+$(".container-ms").hide();
+$(".container-sag").hide();
+$(".container-ss").hide();
+$(".container-mm").hide();
+$(".container-so").hide(); */
+
+/* $(".container-gh").hide();
+$(".container-wr").hide();
+$(".container-adven").hide();
+$(".container-st").hide();
+$(".container-et").hide();
+$(".container-pk").hide();
+$(".container-gs").hide();
+$(".container-ms").hide();
+$(".container-sag").hide();
+$(".container-ss").hide();
+$(".container-mm").hide();
+$(".container-so").hide();  */
+
+/* $("#btn-gh").click(function () {
+  $(".container-gh").slideToggle(350);
+}); */
+
+
+
+main aparentemente perdido
 //Botones reveal
 $("#btn-gh").click(() => {
   $(".container-gh").animate(

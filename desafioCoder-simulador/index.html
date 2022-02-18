@@ -10,6 +10,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./img/l2logo.webp">
   <link rel="stylesheet" href="./style.css">
   <title>Probador de stats - Lineage II</title>
 </head>
@@ -30,7 +31,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-gh">Ghost Hunter</button>
         <div class="container-gh" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-gh">
             <p>Es la tercera clase de guerrero de la raza elfa oscura del nivel 76 al 85.
               Dicen que se mueven increíblemente rápido, se acercan imperceptiblemente y dan en el blanco con unos
@@ -72,7 +73,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-wr">Wind Rider</button>
         <div class="container-wr" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-wr">
             <p>
               Es la tercera clase del Guerrero Elfo del nivel 76 al 85.
@@ -112,7 +113,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-adven">Adventurer</button>
         <div class="container-adven" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <p>
             Es la tercera clase de guerrero humano del nivel 76 al 85.
             Los adventurers son vagabundos que durante mucho tiempo han cambiado el calor del hogar por el polvo de
@@ -154,7 +155,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-st">Shillien Knight</button>
         <div class="container-st" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-st">
             <p>
               Es la tercera clase de guerrero orientada a tanque de la raza elfa oscura del nivel 76 al 85.
@@ -192,7 +193,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-et">Eva's Templar</button>
         <div class="container-et" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-et">
             <p>
               Es la tercera clase de guerrero orientada a tanque de la raza elfa del nivel 76 al 85.
@@ -230,7 +231,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-pk">Phoenix Knight</button>
         <div class="container-pk" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-pk">
             <p>
               Es la tercera clase de guerrero orientada a tanque de la raza humana del nivel 76 al 85.
@@ -278,7 +279,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-gs">Ghost Sentinel</button>
         <div class="container-gs" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-gs">
             <p>Es la tercera Clase de guerrero de la raza elfa oscura del nivel 76 al 85.
               Dicen que se mueven increíblemente rápido, se acercan sin ser vistos y dan en el blanco con unos cuantos
@@ -316,7 +317,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-ms">Moonlight Sentinel</button>
         <div class="container-ms" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-ms">
             <p>Es la tercera clase del Guerrero Elfo de nivel 76 al 85.
               La historia de la creación de este título se remonta a los tiempos en que la prueba de la disposición del
@@ -356,7 +357,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-sag">Sagittarius</button>
         <div class="container-sag" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-he">
             <p>Es la tercera clase de guerrero humano del nivel 76 al 85.
               Los Sagittarius son los tiradores más fuertes, precisos y rápidos de la raza. Solo un Sagittarius puede
@@ -395,7 +396,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-ss">Storm Screamer</button>
         <div class="container-ss" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-ss">
             <p>Es la tercera clase como mago de batalla de la raza de los elfos oscuros con nivel 76 a 85.
               Habiendo alcanzado alturas considerables en el dominio de la magia del aire, cada Spellhowler puede
@@ -432,7 +433,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-mm">Mystic Muse</button>
         <div class="container-mm" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-mm">
             <p>Es la tercera clase de mago de combate élfico del nivel 76 al 85.
               Es un mago inimitable e irrepetible con un poder excepcional y velocidad para lanzar
@@ -471,7 +472,7 @@
 
         <button type="button" class="btn btn-dark" id="btn-so">Soultaker</button>
         <div class="container-so" style="display: none">
-          <a href="#siguiente" class="btn btn-success text-black" role="button">Elegir</a>
+          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
           <div class="descripcion-st">
             <p>Es la tercera clase de combate de un mago humano del nivel 76 al 85.
               Los nigromantes se convierten en Soultakers, dedicados a su causa y trabajando incansablemente para
@@ -509,12 +510,12 @@
   </section>
   <hr>
 
+  <section id="taller">
+    <a name="siguiente">
+      <h3>Personaje seleccionado = ""</h3>
+    </a>
 
-  <a name="siguiente">
-    <h3>Personaje seleccionado = ""</h3>
-  </a>
-
-
+  </section>
 
 
 
