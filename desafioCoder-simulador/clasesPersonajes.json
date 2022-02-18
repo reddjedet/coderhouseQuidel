@@ -1,0 +1,81 @@
+{
+  "Personajes": [
+    {
+      "Dagueros": [
+        { "raza": "elfo oscuro", "profesion": "Ghost Hunter" },
+        { "raza": "elfo", "profesion": "Wind Rider" },
+        { "raza": "humano", "profesion": "Adventurer" }
+      ]
+    },
+
+    {
+      "Tanques": [
+        { "raza": "elfo oscuro", "profesion": "Shillien Templar" },
+        { "raza": "elfo", "profesion": "Eva's Templar" },
+        { "raza": "humano", "profesion": "Phoenix Knight" },
+        { "raza": "humano", "profesion": "Hell Knight" }
+      ]
+    },
+    {
+      "Arqueros": [
+        { "raza": "elfo oscuro", "profesion": "Ghost Sentinel" },
+        { "raza": "elfo", "profesion": "Moonlight Sentinel" },
+        { "raza": "humano", "profesion": "Sagittarius" }
+      ]
+    },
+
+    {
+      "Magos": [
+        { "raza": "elfo oscuro", "profesion": "Storm Screamer" },
+        { "raza": "elfo", "profesion": "Mystic Muse" },
+        { "raza": "humano", "profesion": "SoulTaker" },
+        { "raza": "humano", "profesion": "Archmage" }
+      ]
+    },
+
+    {
+      "Guerreros": [
+        { "raza": "humano", "profesion": "Duelist" },
+        { "raza": "humano", "profesion": "Dreadnought" },
+        { "raza": "orco", "profesion": "Grand Khavatari" },
+        { "raza": "orco", "profesion": "Titan" },
+        { "raza": "enano", "profesion": "Fortune Seeker" },
+        { "raza": "enano", "profesion": "Maestro" }
+      ]
+    },
+
+    {
+      "Pet masters": [
+        { "raza": "elfo oscuro", "profesion": "Spectral Master" },
+        { "raza": "elfo", "profesion": "Elemental Master" },
+        { "raza": "humano", "profesion": "Arcana Lord" }
+      ]
+    },
+
+    {
+      "Kamaels": [
+        { "raza": "kamael", "profesion": "Doombringer" },
+        { "raza": "kamael", "profesion": "Soul Hound (M)" },
+        { "raza": "kamael", "profesion": "Soul Hound (F)" },
+        { "raza": "kamael", "profesion": "Trickster" },
+        { "raza": "kamael", "profesion": "Judicator" }
+      ]
+    },
+
+    {
+      "Buffers": [
+        { "raza": "elfo oscuro", "profesion": "Shillien Saint" },
+        { "raza": "elfo", "profesion": "Eva's Saint" },
+        { "raza": "humano", "profesion": "Cardinal" },
+        { "raza": "humano", "profesion": "Hierophant" }
+      ]
+    },
+
+    {
+      "Dance": [
+        { "raza": "elfo oscuro", "profesion": "Spectral Master" },
+        { "raza": "elfo", "profesion": "Sword Muse" }
+      ]
+    }
+  ]
+}
