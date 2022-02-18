@@ -1,36 +1,73 @@
 * {
   box-sizing: border-box;
+  font-family: "Cascadia Code";
+  font-size: 14px;
+  color: cornsilk;
 }
 
 body {
-  max-width: 100vw;
-  font-size: 12px;
-  padding: 3% 3%;
-  background-color: slategrey;
+  background-color: #150a40;
 }
 
-.col-lg-4 {
-  border: 1px solid black;
+td,
+tr,
+th {
+  border: 2px solid #5db75d;
 }
 
-#col1 {
-  background-image: url("./img/calc.jpg");
-  background-repeat: repeat;
-  background-size: contain;
+img,
+svg {
+  width: 15%;
 }
 
-#col2 {
-  background-image: url("./img/yellow.svg");
+.container-gh,
+.container-wr,
+.container-adven,
+.container-st,
+.container-et,
+.container-pk,
+.container-gs,
+.container-ms,
+.container-sag,
+.container-ss,
+.container-mm,
+.container-so {
+  background-color: rgba(56, 112, 233, 0.6);
+  border-bottom-right-radius: 50px;
+  display: block;
 }
 
-#col3 {
-  background-image: url("./img/yellow.svg");
+.container-gh,
+.container-wr,
+.container-adven,
+.container-st,
+.container-et,
+.container-pk,
+.container-gs,
+.container-ms,
+.container-sag,
+.container-ss,
+.container-mm,
+.container-so > p {
+  width: 90%;
+  padding-left: 2%;
+  margin-left: 2%;
 }
 
-.grupoBtn {
-  display: inline-flex;
+#section-1 {
+  background-image: url(./img/gracia.png);
+  background-position-y: 50%;
+  background-size: cover;
+  padding-bottom: 10%;
+  margin-bottom: 5%;
 }
 
-#banner {
-  margin-left: 30px;
+#section-1 > .text-center {
+  padding-top: 3%;
+  color: #1eaca6;
+  font-size: 25px;
+}
+
+.btn-dark:hover {
+  background-color: #1eaca6;
 }
