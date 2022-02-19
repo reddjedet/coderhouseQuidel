@@ -1,982 +1,1036 @@
 <!DOCTYPE html>
-<html lang="es">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/e77a98ef70.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="./img/l2logo.webp">
-  <link rel="stylesheet" href="./style.css">
-  <title>Probador de stats - Lineage II</title>
-</head>
+<body lang="es">
 
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e77a98ef70.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/l2logo.webp">
+    <link rel="stylesheet" href="./style.css">
+    <title>Probador de stats - Lineage II</title>
+  </head>
 
-
-  <section id="section-1">
-    <h3 class="text-center">Probador de stats - Lineage II</h3>
-    <h4 class="text-center">Elige un personaje</h4>
-  </section>
+  <body>
 
 
+    <section id="section-1">
+      <h3 class="text-center">Probador de stats - Lineage II</h3>
+      <h4 class="text-center">Elige un personaje</h4>
+    </section>
 
-  <section id="section-2">
-    <div class="container-personajes">
-      <div class="dagueros">
 
-        <button type="button" class="btn btn-dark" id="btn-gh">Ghost Hunter</button>
-        <div class="container-gh" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-gh">
-            <p>Es la tercera clase de guerrero de la raza elfa oscura del nivel 76 al 85.
-              Dicen que se mueven increíblemente rápido, se acercan imperceptiblemente y dan en el blanco con unos
-              cuantos
-              golpes
-              precisos, sin darle tiempo al enemigo para responder con un ataque. Los Ghost Hunter son asesinos
-              mercenarios
-              que han
-              tenido éxito en su oficio, que han adquirido nuevas habilidades mortales y habilidades de combate
-              extremadamente
-              útiles.</p>
 
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>41</td>
-                  <td>DEX</td>
-                  <td>34</td>
-                  <td>CON</td>
-                  <td>32</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>25</td>
-                  <td>WIT</td>
-                  <td>12</td>
-                  <td>MEN</td>
-                  <td>26</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/ghost-hunter.webp" alt="">
-          </div>
-        </div>
+    <section id="section-2">
+      <div class="container-personajes">
+        <div class="dagueros">
 
-        <hr>
+          <button type="button" class="btn btn-dark" id="btn-gh">Ghost Hunter</button>
+          <div class="container-gh" style="display: none">
+            <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+            <div class="descripcion-gh">
+              <p>Es la tercera clase de guerrero de la raza elfa oscura del nivel 76 al 85.
+                Dicen que se mueven increíblemente rápido, se acercan imperceptiblemente y dan en el blanco con unos
+                cuantos
+                golpes
+                precisos, sin darle tiempo al enemigo para responder con un ataque. Los Ghost Hunter son asesinos
+                mercenarios
+                que han
+                tenido éxito en su oficio, que han adquirido nuevas habilidades mortales y habilidades de combate
+                extremadamente
+                útiles.</p>
 
-        <button type="button" class="btn btn-dark" id="btn-wr">Wind Rider</button>
-        <div class="container-wr" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-wr">
-            <p>
-              Es la tercera clase del Guerrero Elfo del nivel 76 al 85.
-              Se mueven increíblemente rápido, se acercan imperceptiblemente y golpean al objetivo con varios golpes
-              certeros, sin
-              darle tiempo a la víctima para recuperarse y responder con el ataque. Los Windwalkers son Plainswalkers
-              que
-              han
-              desarrollado nuevas habilidades letales.</p>
-
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>36</td>
-                  <td>DEX</td>
-                  <td>35</td>
-                  <td>CON</td>
-                  <td>36</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>23</td>
-                  <td>WIT</td>
-                  <td>14</td>
-                  <td>MEN</td>
-                  <td>26</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/wind-rider.webp" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-adven">Adventurer</button>
-        <div class="container-adven" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <p>
-            Es la tercera clase de guerrero humano del nivel 76 al 85.
-            Los adventurers son vagabundos que durante mucho tiempo han cambiado el calor del hogar por el polvo de
-            los
-            caminos. Sin
-            embargo, si para los cazadores de tesoros viajar es una forma de ganar dinero, para los aventureros las
-            carreteras son
-            una forma de vida. Todavía son leales a su daga, pero sus habilidades de ataque han aumentado.</p>
-
-          <b>Stats</b>
-          <table border="1" cellpadding="1">
-            <tbody>
-              <tr>
-                <td>STR</td>
-                <td>36</td>
-                <td>DEX</td>
-                <td>35</td>
-                <td>CON</td>
-                <td>36</td>
-              </tr>
-              <tr>
-                <td>INT</td>
-                <td>23</td>
-                <td>WIT</td>
-                <td>14</td>
-                <td>MEN</td>
-                <td>26</td>
-              </tr>
-            </tbody>
-          </table>
-          <img src="./img/adventurer-e1556361355538.webp" alt="">
-        </div>
-
-      </div>
-
-      <hr>
-
-      <div class="tanques">
-
-        <button type="button" class="btn btn-dark" id="btn-st">Shillien Knight</button>
-        <div class="container-st" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-st">
-            <p>
-              Es la tercera clase de guerrero orientada a tanque de la raza elfa oscura del nivel 76 al 85.
-              Los shillien templar más leales tarde o temprano reciben el título de Templarios, volviéndose aún más
-              fuertes
-              y
-              resistentes. También están entrenados para usar su escudo para atacar.</p>
-
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>40</td>
-                  <td>DEX</td>
-                  <td>30</td>
-                  <td>CON</td>
-                  <td>43</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>21</td>
-                  <td>WIT</td>
-                  <td>11</td>
-                  <td>MEN</td>
-                  <td>25</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/shillien-templar.webp" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-et">Eva's Templar</button>
-        <div class="container-et" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-et">
-            <p>
-              Es la tercera clase de guerrero orientada a tanque de la raza elfa del nivel 76 al 85.
-              Los eva's templar más leales tarde o temprano reciben el título de Templarios, volviéndose aún más fuertes
-              y
-              resistentes. Los Templarios mejoran sus habilidades con el escudo, que se convierte no sólo en un medio de
-              defensa, sino
-              también en un arma de ataque.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>41</td>
-                  <td>DEX</td>
-                  <td>34</td>
-                  <td>CON</td>
-                  <td>32</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>25</td>
-                  <td>WIT</td>
-                  <td>12</td>
-                  <td>MEN</td>
-                  <td>26</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/evas-templar.webp" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-pk">Phoenix Knight</button>
-        <div class="container-pk" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-pk">
-            <p>
-              Es la tercera clase de guerrero orientada a tanque de la raza humana del nivel 76 al 85.
-              Pocos de los Paladines son capaces de convertirse en el Caballero Fénix, llevando la luz y la Verdadera Fe
-              a
-              los
-              rincones más remotos de este mundo. Sin embargo, el que pudo resistir todas las pruebas recibe como
-              recompensa
-              nuevas
-              habilidades excepcionales, incluida la capacidad, como el ave Fénix, de engañar a la muerte al resucitar
-              de
-              entre los
-              muertos.</p>
-
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>40</td>
-                  <td>DEX</td>
-                  <td>30</td>
-                  <td>CON</td>
-                  <td>43</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>21</td>
-                  <td>WIT</td>
-                  <td>11</td>
-                  <td>MEN</td>
-                  <td>25</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/phoenix-knight-e1556360822408.webp" alt="">
-          </div>
-        </div>
-
-      </div>
-
-      <hr>
-
-      <div class="Arqueros">
-
-        <button type="button" class="btn btn-dark" id="btn-gs">Ghost Sentinel</button>
-        <div class="container-gs" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-gs">
-            <p>Es la tercera Clase de guerrero de la raza elfa oscura del nivel 76 al 85.
-              Dicen que se mueven increíblemente rápido, se acercan sin ser vistos y dan en el blanco con unos cuantos
-              golpes
-              precisos, sin darle tiempo al enemigo para responder con un ataque. Los Ghost Sentinels son mercenarios
-              asesinos que
-              tienen éxito en su oficio, que han adquirido nuevas habilidades mortales y habilidades de combate
-              extremadamente útiles.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>41</td>
-                  <td>DEX</td>
-                  <td>34</td>
-                  <td>CON</td>
-                  <td>32</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>25</td>
-                  <td>WIT</td>
-                  <td>12</td>
-                  <td>MEN</td>
-                  <td>26</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/ghost-sentinel.webp" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-ms">Moonlight Sentinel</button>
-        <div class="container-ms" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-ms">
-            <p>Es la tercera clase del Guerrero Elfo de nivel 76 al 85.
-              La historia de la creación de este título se remonta a los tiempos en que la prueba de la disposición del
-              Elfo para dar
-              un nuevo paso era la participación en la caza, pasando a la luz de la luna llena. Para un Ranger,
-              convertirse en
-              Moonlight Sentinel es un gran honor, porque el nuevo estado no solo otorga habilidades más poderosas, sino
-              que también
-              genera el respeto de los demás.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>36</td>
-                  <td>DEX</td>
-                  <td>35</td>
-                  <td>CON</td>
-                  <td>36</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>23</td>
-                  <td>WIT</td>
-                  <td>14</td>
-                  <td>MEN</td>
-                  <td>26</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/moonlight-sentinel.webp" alt="">
+              <b>Stats</b>
+              <table border="1" cellpadding="1">
+                <tbody>
+                  <tr>
+                    <td>STR</td>
+                    <td>41</td>
+                    <td>DEX</td>
+                    <td>34</td>
+                    <td>CON</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <td>INT</td>
+                    <td>25</td>
+                    <td>WIT</td>
+                    <td>12</td>
+                    <td>MEN</td>
+                    <td>26</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="./img/ghost-hunter.webp" alt="">
+            </div>
           </div>
 
-        </div>
+          <hr>
 
-        <hr>
+          <button type="button" class="btn btn-dark" id="btn-wr">Wind Rider</button>
+          <div class="container-wr" style="display: none">
+            <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+            <div class="descripcion-wr">
+              <p>
+                Es la tercera clase del Guerrero Elfo del nivel 76 al 85.
+                Se mueven increíblemente rápido, se acercan imperceptiblemente y golpean al objetivo con varios golpes
+                certeros, sin
+                darle tiempo a la víctima para recuperarse y responder con el ataque. Los Windwalkers son Plainswalkers
+                que
+                han
+                desarrollado nuevas habilidades letales.</p>
 
-        <button type="button" class="btn btn-dark" id="btn-sag">Sagittarius</button>
-        <div class="container-sag" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-he">
-            <p>Es la tercera clase de guerrero humano del nivel 76 al 85.
-              Los Sagittarius son los tiradores más fuertes, precisos y rápidos de la raza. Solo un Sagittarius puede
-              aprender habilidades
-              especiales de combate que son inaccesibles para Hawkeye.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>40</td>
-                  <td>DEX</td>
-                  <td>30</td>
-                  <td>CON</td>
-                  <td>43</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>21</td>
-                  <td>WIT</td>
-                  <td>11</td>
-                  <td>MEN</td>
-                  <td>25</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/hawkeye-e1556358498839.webp" alt="">
+              <b>Stats</b>
+              <table border="1" cellpadding="1">
+                <tbody>
+                  <tr>
+                    <td>STR</td>
+                    <td>36</td>
+                    <td>DEX</td>
+                    <td>35</td>
+                    <td>CON</td>
+                    <td>36</td>
+                  </tr>
+                  <tr>
+                    <td>INT</td>
+                    <td>23</td>
+                    <td>WIT</td>
+                    <td>14</td>
+                    <td>MEN</td>
+                    <td>26</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="./img/wind-rider.webp" alt="">
+            </div>
+          </div>
+
+          <hr>
+
+          <button type="button" class="btn btn-dark" id="btn-adven">Adventurer</button>
+          <div class="container-adven" style="display: none">
+            <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+            <div class="descripcion-adven">
+              <p>
+                Es la tercera clase de guerrero humano del nivel 76 al 85.
+                Los adventurers son vagabundos que durante mucho tiempo han cambiado el calor del hogar por el polvo de
+                los
+                caminos. Sin
+                embargo, si para los cazadores de tesoros viajar es una forma de ganar dinero, para los aventureros las
+                carreteras son
+                una forma de vida. Todavía son leales a su daga, pero sus habilidades de ataque han aumentado.</p>
+
+              <b>Stats</b>
+              <table border="1" cellpadding="1">
+                <tbody>
+                  <tr>
+                    <td>STR</td>
+                    <td>36</td>
+                    <td>DEX</td>
+                    <td>35</td>
+                    <td>CON</td>
+                    <td>36</td>
+                  </tr>
+                  <tr>
+                    <td>INT</td>
+                    <td>23</td>
+                    <td>WIT</td>
+                    <td>14</td>
+                    <td>MEN</td>
+                    <td>26</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="./img/adventurer-e1556361355538.webp" alt="">
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="tanques">
+
+            <button type="button" class="btn btn-dark" id="btn-st">Shillien Knight</button>
+            <div class="container-st" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-st">
+                <p>
+                  Es la tercera clase de guerrero orientada a tanque de la raza elfa oscura del nivel 76 al 85.
+                  Los shillien templar más leales tarde o temprano reciben el título de Templarios, volviéndose aún más
+                  fuertes
+                  y
+                  resistentes. También están entrenados para usar su escudo para atacar.</p>
+
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>40</td>
+                      <td>DEX</td>
+                      <td>30</td>
+                      <td>CON</td>
+                      <td>43</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>21</td>
+                      <td>WIT</td>
+                      <td>11</td>
+                      <td>MEN</td>
+                      <td>25</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/shillien-templar.webp" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-et">Eva's Templar</button>
+            <div class="container-et" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-et">
+                <p>
+                  Es la tercera clase de guerrero orientada a tanque de la raza elfa del nivel 76 al 85.
+                  Los eva's templar más leales tarde o temprano reciben el título de Templarios, volviéndose aún más
+                  fuertes
+                  y
+                  resistentes. Los Templarios mejoran sus habilidades con el escudo, que se convierte no sólo en un
+                  medio
+                  de
+                  defensa, sino
+                  también en un arma de ataque.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>41</td>
+                      <td>DEX</td>
+                      <td>34</td>
+                      <td>CON</td>
+                      <td>32</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>25</td>
+                      <td>WIT</td>
+                      <td>12</td>
+                      <td>MEN</td>
+                      <td>26</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/evas-templar.webp" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-pk">Phoenix Knight</button>
+            <div class="container-pk" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-pk">
+                <p>
+                  Es la tercera clase de guerrero orientada a tanque de la raza humana del nivel 76 al 85.
+                  Pocos de los Paladines son capaces de convertirse en el Caballero Fénix, llevando la luz y la
+                  Verdadera
+                  Fe
+                  a
+                  los
+                  rincones más remotos de este mundo. Sin embargo, el que pudo resistir todas las pruebas recibe como
+                  recompensa
+                  nuevas
+                  habilidades excepcionales, incluida la capacidad, como el ave Fénix, de engañar a la muerte al
+                  resucitar
+                  de
+                  entre los
+                  muertos.</p>
+
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>40</td>
+                      <td>DEX</td>
+                      <td>30</td>
+                      <td>CON</td>
+                      <td>43</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>21</td>
+                      <td>WIT</td>
+                      <td>11</td>
+                      <td>MEN</td>
+                      <td>25</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/phoenix-knight-e1556360822408.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="Arqueros">
+
+            <button type="button" class="btn btn-dark" id="btn-gs">Ghost Sentinel</button>
+            <div class="container-gs" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-gs">
+                <p>Es la tercera Clase de guerrero de la raza elfa oscura del nivel 76 al 85.
+                  Dicen que se mueven increíblemente rápido, se acercan sin ser vistos y dan en el blanco con unos
+                  cuantos
+                  golpes
+                  precisos, sin darle tiempo al enemigo para responder con un ataque. Los Ghost Sentinels son
+                  mercenarios
+                  asesinos que
+                  tienen éxito en su oficio, que han adquirido nuevas habilidades mortales y habilidades de combate
+                  extremadamente útiles.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>41</td>
+                      <td>DEX</td>
+                      <td>34</td>
+                      <td>CON</td>
+                      <td>32</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>25</td>
+                      <td>WIT</td>
+                      <td>12</td>
+                      <td>MEN</td>
+                      <td>26</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/ghost-sentinel.webp" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-ms">Moonlight Sentinel</button>
+            <div class="container-ms" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-ms">
+                <p>Es la tercera clase del Guerrero Elfo de nivel 76 al 85.
+                  La historia de la creación de este título se remonta a los tiempos en que la prueba de la disposición
+                  del
+                  Elfo para dar
+                  un nuevo paso era la participación en la caza, pasando a la luz de la luna llena. Para un Ranger,
+                  convertirse en
+                  Moonlight Sentinel es un gran honor, porque el nuevo estado no solo otorga habilidades más poderosas,
+                  sino
+                  que también
+                  genera el respeto de los demás.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>36</td>
+                      <td>DEX</td>
+                      <td>35</td>
+                      <td>CON</td>
+                      <td>36</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>23</td>
+                      <td>WIT</td>
+                      <td>14</td>
+                      <td>MEN</td>
+                      <td>26</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/moonlight-sentinel.webp" alt="">
+              </div>
+
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-sag">Sagittarius</button>
+            <div class="container-sag" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-sag">
+                <p>Es la tercera clase de guerrero humano del nivel 76 al 85.
+                  Los Sagittarius son los tiradores más fuertes, precisos y rápidos de la raza. Solo un Sagittarius
+                  puede
+                  aprender habilidades
+                  especiales de combate que son inaccesibles para Hawkeye.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>40</td>
+                      <td>DEX</td>
+                      <td>30</td>
+                      <td>CON</td>
+                      <td>43</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>21</td>
+                      <td>WIT</td>
+                      <td>11</td>
+                      <td>MEN</td>
+                      <td>25</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/hawkeye-e1556358498839.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="nukers">
+
+            <button type="button" class="btn btn-dark" id="btn-ss">Storm Screamer</button>
+            <div class="container-ss" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-ss">
+                <p>Es la tercera clase como mago de batalla de la raza de los elfos oscuros con nivel 76 a 85.
+                  Habiendo alcanzado alturas considerables en el dominio de la magia del aire, cada Spellhowler puede
+                  reclamar
+                  el derecho
+                  a ser llamado el Señor de la Tormenta. Obtiene acceso a nuevos hechizos y se vuelve aún más poderoso
+                  que
+                  antes.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>21</td>
+                      <td>DEX</td>
+                      <td>24</td>
+                      <td>CON</td>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>37</td>
+                      <td>WIT</td>
+                      <td>23</td>
+                      <td>MEN</td>
+                      <td>40</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/storm-screamer.webp" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-mm">Mystic Muse</button>
+            <div class="container-mm" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-mm">
+                <p>Es la tercera clase de mago de combate élfico del nivel 76 al 85.
+                  Es un mago inimitable e irrepetible con un poder excepcional y velocidad para lanzar
+                  hechizos. Sin embargo, uno no debe pensar que este título es fácil: hay muchos obstáculos y
+                  dificultades
+                  en
+                  el camino
+                  hacia la meta de forjar. No todos los Spellsinger son capaces de obtener la fuerza y el poder de una
+                  verdadera Musa
+                  Mística.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>21</td>
+                      <td>DEX</td>
+                      <td>24</td>
+                      <td>CON</td>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>37</td>
+                      <td>WIT</td>
+                      <td>23</td>
+                      <td>MEN</td>
+                      <td>40</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/mystic-muse.webp" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-so">Soultaker</button>
+            <div class="container-so" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-so">
+                <p>Es la tercera clase de combate de un mago humano del nivel 76 al 85.
+                  Los nigromantes se convierten en Soultakers, dedicados a su causa y trabajando incansablemente para
+                  mejorar
+                  sus habilidades. Maestros de la magia negra, Soul Eaters, líderes de los muertos: dejan a los enemigos
+                  asombrados, una
+                  mención del Soul Eater puede hacer que el enemigo huya.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>22</td>
+                      <td>DEX</td>
+                      <td>21</td>
+                      <td>CON</td>
+                      <td>27</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>41</td>
+                      <td>WIT</td>
+                      <td>20</td>
+                      <td>MEN</td>
+                      <td>39</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/soultaker.webp" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-arch">Archmage</button>
+            <div class="container-arch" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-arch">
+                <p>Es la tercera Clase de combate del Mago Humano del nivel 76 al 85.
+                  Los días y las noches que pasan en la Torre de Marfil leyendo libros no son un desperdicio para los
+                  magos:
+                  practican y
+                  mejoran sus habilidades, pueden reclamar el derecho a ser llamados archimagos y usar magia más
+                  destructiva.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>22</td>
+                      <td>DEX</td>
+                      <td>21</td>
+                      <td>CON</td>
+                      <td>27</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>41</td>
+                      <td>WIT</td>
+                      <td>20</td>
+                      <td>MEN</td>
+                      <td>39</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/archmage.png" alt="">
+              </div>
+            </div>
+
+
+            <hr>
+            <div class="guerreros"></div>
+
+
+            <button type="button" class="btn btn-dark" id="btn-duel">Duelist</button>
+            <div class="container-duel" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-duel">
+                <p>Es la Tercera Clase de un Guerrero de la Raza Humana del nivel 76 al 85.
+                  Duelistas, maestros insuperables del combate a dos espadas. Solo los Gladiadores más resistentes y
+                  fuertes
+                  califican
+                  para convertirse en Duelistas. Como recompensa, reciben una mayor resistencia a las maldiciones y
+                  enfermedades, así como
+                  nuevas habilidades de combate que les permiten luchar contra los oponentes de manera aún más efectiva.
+                </p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>40</td>
+                      <td>DEX</td>
+                      <td>26</td>
+                      <td>CON</td>
+                      <td>47</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>18</td>
+                      <td>WIT</td>
+                      <td>12</td>
+                      <td>MEN</td>
+                      <td>27</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/duelist-e1556359317995.png" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-dread">Dreadnought</button>
+            <div class="container-dread" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-dread">
+                <p>Es la Tercera Clase de un Guerrero de la Raza Humana del nivel 76 al 85.
+                  Los Dreadnoughts ostentan legítimamente el título de grandes luchadores: nadie más puede manejar con
+                  maestría armas de
+                  asta como esa. Todos los señores de la guerra sueñan con recibir algún día este título honorífico,
+                  porque
+                  a los
+                  Dreadnought se les enseñan técnicas especiales que aumentan significativamente su poder de combate.
+                </p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>40</td>
+                      <td>DEX</td>
+                      <td>30</td>
+                      <td>CON</td>
+                      <td>43</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>21</td>
+                      <td>WIT</td>
+                      <td>11</td>
+                      <td>MEN</td>
+                      <td>25</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/dreadnought1-e1577529899825.png" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-gk">Grand Khavatari</button>
+            <div class="container-gk" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-gk">
+                <p>Es la Tercera clase de guerrero orco del nivel 76 al 85.
+                  Los Grand Khavatari son maestros destacados en el uso de puños americanos de guerra. Sus cuerpos son
+                  flexibles y
+                  móviles, su velocidad de ataque es sin precedentes y la capacidad de cambiar bajo la influencia de los
+                  espíritus de los
+                  animales antiguos hace que los Grand Khavatari sean luchadores versátiles.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>40</td>
+                      <td>DEX</td>
+                      <td>30</td>
+                      <td>CON</td>
+                      <td>43</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>21</td>
+                      <td>WIT</td>
+                      <td>11</td>
+                      <td>MEN</td>
+                      <td>25</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/grand-khavatari2.png" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-ti">Titan</button>
+            <div class="container-ti" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-ti">
+                <p>Es la Tercera clase de guerrero de raza orca del nivel 76 al 85.
+                  Destruye, destruye, destruye: los titanes cumplen con éxito estas tareas. Son increíblemente fuertes y
+                  resistentes. Ser
+                  Titán es una vocación que no es digna de cada Destructor. A pesar de su lentitud, son oponentes
+                  formidables. Un par de
+                  golpes de este poderoso gigante pueden nivelar instantáneamente al enemigo con el suelo.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>40</td>
+                      <td>DEX</td>
+                      <td>26</td>
+                      <td>CON</td>
+                      <td>47</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>18</td>
+                      <td>WIT</td>
+                      <td>12</td>
+                      <td>MEN</td>
+                      <td>27</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/titan.png" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-fs">Fortune Seeker</button>
+            <div class="container-fs" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-fs">
+                <p>Es La tercera Clase de un guerrero de la raza Enana del nivel 76 al 85.
+                  Conseguir el título de Treasure Hunter es un sueño preciado de cualquier Bounty Hunter. Su principal
+                  diferencia es la
+                  capacidad de aprender nuevas habilidades de combate, lo que permite a los Enanos finalmente estar en
+                  fila
+                  con otros
+                  guerreros y ofrecer una resistencia digna en los campos de batalla.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>39</td>
+                      <td>DEX</td>
+                      <td>29</td>
+                      <td>CON</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>20</td>
+                      <td>WIT</td>
+                      <td>10</td>
+                      <td>MEN</td>
+                      <td>27</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/fortune-seeker.png" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-maes">Maestro</button>
+            <div class="container-maes" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-maes">
+                <p>Es la tercera clase de la raza enana del nivel 76 al 85.
+                  Obtener el título de Maestro es el sueño preciado de cualquier Warsmith. Su peculiaridad es la
+                  capacidad
+                  de aprender
+                  nuevas habilidades de combate, lo que permite a los Enanos finalmente estar a la par con otros
+                  guerreros
+                  y
+                  brindar una
+                  resistencia digna en los campos de batalla.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>39</td>
+                      <td>DEX</td>
+                      <td>29</td>
+                      <td>CON</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>20</td>
+                      <td>WIT</td>
+                      <td>10</td>
+                      <td>MEN</td>
+                      <td>27</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/maestro.png" alt="">
+              </div>
+            </div>
+
+            <hr>
+            <div class="pet-masters"></div>
+
+
+            <button type="button" class="btn btn-dark" id="btn-sm">Spectral Master</button>
+            <div class="container-sm" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-sm">
+                <p>Es la tercera profesión de un mago de batalla de la raza elfa oscura del nivel 76 al 85.
+                  Spectral Master es la única clase Dark Elf que tiene acceso a hechizos de invocación desconocidos.
+                  Pueden
+                  adquirir
+                  nuevas habilidades únicas y usar un Fantasma (criatura convocada) más fuerte y poderoso.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>21</td>
+                      <td>DEX</td>
+                      <td>24</td>
+                      <td>CON</td>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>37</td>
+                      <td>WIT</td>
+                      <td>23</td>
+                      <td>MEN</td>
+                      <td>40</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/spectral-master.png" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-em">Elementa Master</button>
+            <div class="container-em" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-em">
+                <p>Es la tercera clase de un mago élfico de combate del nivel 76 al 85.
+                  Elemental Master es el único de los Elfos que tiene acceso a hechizos desconocidos de magia de
+                  invocación.
+                  Puede
+                  detectar la posibilidad de usar un Unicornio nuevo, más fuerte y más duradero en la batalla.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>21</td>
+                      <td>DEX</td>
+                      <td>24</td>
+                      <td>CON</td>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>37</td>
+                      <td>WIT</td>
+                      <td>23</td>
+                      <td>MEN</td>
+                      <td>40</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/elemental-master.png" alt="">
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="btn btn-dark" id="btn-al">Arcana Lord</button>
+            <div class="container-al" style="display: none">
+              <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
+              <div class="descripcion-al">
+                <p>Es la tercera Clase de combate del Mago Humano del nivel 76 al 85.
+                  El título de Arcana Lord se otorga a los brujos que han alcanzado las alturas en su profesión y están
+                  listos para seguir
+                  adelante. Se les enseñan nuevos hechizos, incluida la invocación de otra criatura, más fuerte y
+                  resistente
+                  que las
+                  anteriores.</p>
+                <b>Stats</b>
+                <table border="1" cellpadding="1">
+                  <tbody>
+                    <tr>
+                      <td>STR</td>
+                      <td>22</td>
+                      <td>DEX</td>
+                      <td>21</td>
+                      <td>CON</td>
+                      <td>27</td>
+                    </tr>
+                    <tr>
+                      <td>INT</td>
+                      <td>41</td>
+                      <td>WIT</td>
+                      <td>20</td>
+                      <td>MEN</td>
+                      <td>39</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <img src="./img/arcana-lord.png" alt="">
+              </div>
+            </div>
+
+
+
           </div>
         </div>
-
-      </div>
-
-      <hr>
-
-      <div class="nukers">
-
-        <button type="button" class="btn btn-dark" id="btn-ss">Storm Screamer</button>
-        <div class="container-ss" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-ss">
-            <p>Es la tercera clase como mago de batalla de la raza de los elfos oscuros con nivel 76 a 85.
-              Habiendo alcanzado alturas considerables en el dominio de la magia del aire, cada Spellhowler puede
-              reclamar
-              el derecho
-              a ser llamado el Señor de la Tormenta. Obtiene acceso a nuevos hechizos y se vuelve aún más poderoso que
-              antes.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>21</td>
-                  <td>DEX</td>
-                  <td>24</td>
-                  <td>CON</td>
-                  <td>25</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>37</td>
-                  <td>WIT</td>
-                  <td>23</td>
-                  <td>MEN</td>
-                  <td>40</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/storm-screamer.webp" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-mm">Mystic Muse</button>
-        <div class="container-mm" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-mm">
-            <p>Es la tercera clase de mago de combate élfico del nivel 76 al 85.
-              Es un mago inimitable e irrepetible con un poder excepcional y velocidad para lanzar
-              hechizos. Sin embargo, uno no debe pensar que este título es fácil: hay muchos obstáculos y dificultades
-              en
-              el camino
-              hacia la meta de forjar. No todos los Spellsinger son capaces de obtener la fuerza y el poder de una
-              verdadera Musa
-              Mística.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>21</td>
-                  <td>DEX</td>
-                  <td>24</td>
-                  <td>CON</td>
-                  <td>25</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>37</td>
-                  <td>WIT</td>
-                  <td>23</td>
-                  <td>MEN</td>
-                  <td>40</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/mystic-muse.webp" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-so">Soultaker</button>
-        <div class="container-so" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-st">
-            <p>Es la tercera clase de combate de un mago humano del nivel 76 al 85.
-              Los nigromantes se convierten en Soultakers, dedicados a su causa y trabajando incansablemente para
-              mejorar
-              sus habilidades. Maestros de la magia negra, Soul Eaters, líderes de los muertos: dejan a los enemigos
-              asombrados, una
-              mención del Soul Eater puede hacer que el enemigo huya.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>22</td>
-                  <td>DEX</td>
-                  <td>21</td>
-                  <td>CON</td>
-                  <td>27</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>41</td>
-                  <td>WIT</td>
-                  <td>20</td>
-                  <td>MEN</td>
-                  <td>39</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/soultaker.webp" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-arch">Archmage</button>
-        <div class="container-arch" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la tercera Clase de combate del Mago Humano del nivel 76 al 85.
-              Los días y las noches que pasan en la Torre de Marfil leyendo libros no son un desperdicio para los magos:
-              practican y
-              mejoran sus habilidades, pueden reclamar el derecho a ser llamados archimagos y usar magia más
-              destructiva.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>22</td>
-                  <td>DEX</td>
-                  <td>21</td>
-                  <td>CON</td>
-                  <td>27</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>41</td>
-                  <td>WIT</td>
-                  <td>20</td>
-                  <td>MEN</td>
-                  <td>39</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/archmage.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-arch">Archmage</button>
-        <div class="container-arch" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la tercera Clase de combate del Mago Humano del nivel 76 al 85.
-              Los días y las noches que pasan en la Torre de Marfil leyendo libros no son un desperdicio para los magos:
-              practican y
-              mejoran sus habilidades, pueden reclamar el derecho a ser llamados archimagos y usar magia más
-              destructiva.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>22</td>
-                  <td>DEX</td>
-                  <td>21</td>
-                  <td>CON</td>
-                  <td>27</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>41</td>
-                  <td>WIT</td>
-                  <td>20</td>
-                  <td>MEN</td>
-                  <td>39</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/archmage.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-        <div class="guerreros"></div>
-
-
-        <button type="button" class="btn btn-dark" id="btn-duel">Duelist</button>
-        <div class="container-duel" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la Tercera Clase de un Guerrero de la Raza Humana del nivel 76 al 85.
-              Duelistas, maestros insuperables del combate a dos espadas. Solo los Gladiadores más resistentes y fuertes
-              califican
-              para convertirse en Duelistas. Como recompensa, reciben una mayor resistencia a las maldiciones y
-              enfermedades, así como
-              nuevas habilidades de combate que les permiten luchar contra los oponentes de manera aún más efectiva.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>40</td>
-                  <td>DEX</td>
-                  <td>26</td>
-                  <td>CON</td>
-                  <td>47</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>18</td>
-                  <td>WIT</td>
-                  <td>12</td>
-                  <td>MEN</td>
-                  <td>27</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/grand-khavatari2.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-dread">Dreadnought</button>
-        <div class="container-dread" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la Tercera Clase de un Guerrero de la Raza Humana del nivel 76 al 85.
-              Los Dreadnoughts ostentan legítimamente el título de grandes luchadores: nadie más puede manejar con
-              maestría armas de
-              asta como esa. Todos los señores de la guerra sueñan con recibir algún día este título honorífico, porque
-              a los
-              Dreadnought se les enseñan técnicas especiales que aumentan significativamente su poder de combate.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>40</td>
-                  <td>DEX</td>
-                  <td>30</td>
-                  <td>CON</td>
-                  <td>43</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>21</td>
-                  <td>WIT</td>
-                  <td>11</td>
-                  <td>MEN</td>
-                  <td>25</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/dreadnought1-e1577529899825.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-gk">Grand Khavatari</button>
-        <div class="container-gk" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la Tercera clase de guerrero orco del nivel 76 al 85.
-              Los Grand Khavatari son maestros destacados en el uso de puños americanos de guerra. Sus cuerpos son
-              flexibles y
-              móviles, su velocidad de ataque es sin precedentes y la capacidad de cambiar bajo la influencia de los
-              espíritus de los
-              animales antiguos hace que los Grand Khavatari sean luchadores versátiles.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>40</td>
-                  <td>DEX</td>
-                  <td>30</td>
-                  <td>CON</td>
-                  <td>43</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>21</td>
-                  <td>WIT</td>
-                  <td>11</td>
-                  <td>MEN</td>
-                  <td>25</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/duelist-e1556359317995.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-ti">Titan</button>
-        <div class="container-ti" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la Tercera clase de guerrero de raza orca del nivel 76 al 85.
-              Destruye, destruye, destruye: los titanes cumplen con éxito estas tareas. Son increíblemente fuertes y
-              resistentes. Ser
-              Titán es una vocación que no es digna de cada Destructor. A pesar de su lentitud, son oponentes
-              formidables. Un par de
-              golpes de este poderoso gigante pueden nivelar instantáneamente al enemigo con el suelo.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>40</td>
-                  <td>DEX</td>
-                  <td>26</td>
-                  <td>CON</td>
-                  <td>47</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>18</td>
-                  <td>WIT</td>
-                  <td>12</td>
-                  <td>MEN</td>
-                  <td>27</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/titan.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-fs">Fortune Seeker</button>
-        <div class="container-fs" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es La tercera Clase de un guerrero de la raza Enana del nivel 76 al 85.
-              Conseguir el título de Treasure Hunter es un sueño preciado de cualquier Bounty Hunter. Su principal
-              diferencia es la
-              capacidad de aprender nuevas habilidades de combate, lo que permite a los Enanos finalmente estar en fila
-              con otros
-              guerreros y ofrecer una resistencia digna en los campos de batalla.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>39</td>
-                  <td>DEX</td>
-                  <td>29</td>
-                  <td>CON</td>
-                  <td>45</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>20</td>
-                  <td>WIT</td>
-                  <td>10</td>
-                  <td>MEN</td>
-                  <td>27</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/fortune-seeker.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-maes">Maestro</button>
-        <div class="container-maes" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la tercera clase de la raza enana del nivel 76 al 85.
-              Obtener el título de Maestro es el sueño preciado de cualquier Warsmith. Su peculiaridad es la capacidad
-              de aprender
-              nuevas habilidades de combate, lo que permite a los Enanos finalmente estar a la par con otros guerreros y
-              brindar una
-              resistencia digna en los campos de batalla.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>39</td>
-                  <td>DEX</td>
-                  <td>29</td>
-                  <td>CON</td>
-                  <td>45</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>20</td>
-                  <td>WIT</td>
-                  <td>10</td>
-                  <td>MEN</td>
-                  <td>27</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/maestro.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-        <div class="pet-masters"></div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-maes">Maestro</button>
-        <div class="container-maes" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la tercera clase de la raza enana del nivel 76 al 85.
-              Obtener el título de Maestro es el sueño preciado de cualquier Warsmith. Su peculiaridad es la capacidad
-              de aprender
-              nuevas habilidades de combate, lo que permite a los Enanos finalmente estar a la par con otros guerreros y
-              brindar una
-              resistencia digna en los campos de batalla.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>39</td>
-                  <td>DEX</td>
-                  <td>29</td>
-                  <td>CON</td>
-                  <td>45</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>20</td>
-                  <td>WIT</td>
-                  <td>10</td>
-                  <td>MEN</td>
-                  <td>27</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/maestro.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-sm">Spectral Master</button>
-        <div class="container-sm" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la tercera profesión de un mago de batalla de la raza elfa oscura del nivel 76 al 85.
-              Spectral Master es la única clase Dark Elf que tiene acceso a hechizos de invocación desconocidos. Pueden
-              adquirir
-              nuevas habilidades únicas y usar un Fantasma (criatura convocada) más fuerte y poderoso.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>21</td>
-                  <td>DEX</td>
-                  <td>24</td>
-                  <td>CON</td>
-                  <td>25</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>37</td>
-                  <td>WIT</td>
-                  <td>23</td>
-                  <td>MEN</td>
-                  <td>40</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/spectral-master.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-em">Elementa Master</button>
-        <div class="container-em" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la tercera clase de un mago élfico de combate del nivel 76 al 85.
-              Elemental Master es el único de los Elfos que tiene acceso a hechizos desconocidos de magia de invocación.
-              Puede
-              detectar la posibilidad de usar un Unicornio nuevo, más fuerte y más duradero en la batalla.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>21</td>
-                  <td>DEX</td>
-                  <td>24</td>
-                  <td>CON</td>
-                  <td>25</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>37</td>
-                  <td>WIT</td>
-                  <td>23</td>
-                  <td>MEN</td>
-                  <td>40</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/elemental-master.png" alt="">
-          </div>
-        </div>
-
-        <hr>
-
-        <button type="button" class="btn btn-dark" id="btn-al">Arcana Lord</button>
-        <div class="container-al" style="display: none">
-          <a href="#siguiente" id="btn-seleccion" class="btn btn-success text-black" role="button">Elegir</a>
-          <div class="descripcion-arch">
-            <p>Es la tercera Clase de combate del Mago Humano del nivel 76 al 85.
-              El título de Arcana Lord se otorga a los brujos que han alcanzado las alturas en su profesión y están
-              listos para seguir
-              adelante. Se les enseñan nuevos hechizos, incluida la invocación de otra criatura, más fuerte y resistente
-              que las
-              anteriores.</p>
-            <b>Stats</b>
-            <table border="1" cellpadding="1">
-              <tbody>
-                <tr>
-                  <td>STR</td>
-                  <td>22</td>
-                  <td>DEX</td>
-                  <td>21</td>
-                  <td>CON</td>
-                  <td>27</td>
-                </tr>
-                <tr>
-                  <td>INT</td>
-                  <td>41</td>
-                  <td>WIT</td>
-                  <td>20</td>
-                  <td>MEN</td>
-                  <td>39</td>
-                </tr>
-              </tbody>
-            </table>
-            <img src="./img/elemental-master.png" alt="">
-          </div>
-        </div>
+    </section>
+    <hr>
 
 
 
+    <div class="celeeste">
+      <a name="siguiente">
+        <h3>Personaje seleccionado = ""</h3>
+      </a>
+    </div>
+
+
+
+
+
+
+    <button type="button" class="btn btn-warning fixed-bottom" id="btn-footer">Información de dyes</button>
+    <div class="footer">
+      <div class="container-dyes">
+        <table>
+          <tr>
+            <th>
+              -
+            </th>
+            <th>
+              <p>Nombre</p>
+            </th>
+            <th>
+              <p>Descripción</p>
+            </th>
+          </tr>
+
+          <tr>
+            <td class="dye-img-1"></td>
+            <td>CON</td>
+            <td class="dye-descripcion">
+              <p>
+                Resistencia, influenciada por Max HP y Max CP, tasa de regeneración de HP, peso
+                máximo tolerado, capacidad
+                pulmonar,
+                daño por estar bajo el agua, resistencia al aturdimiento y sangrado, aumenta la resistencia al veneno.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="dye-img-2"></td>
+            <td>STR</td>
+            <td class="dye-descripcion">
+              <p>
+                Fuerza, influenciada por el ataque físico, el poder crítico del personaje, el peso
+                máximo transportado
+                (menos de CON).
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="dye-img-3"></td>
+            <td>DEX</td>
+            <td class="dye-descripcion">
+              <p>
+                Destreza, influenciada por la velocidad de ataque, la precisión, la esquiva, la
+                probabilidad de ataque
+                crítico, la
+                probabilidad de defensa con escudo y la velocidad del personaje.
+                </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="dye-img-4"></td>
+            <td>INT</td>
+            <td class="dye-descripcion">
+              <p>
+                Inteligencia, afectada por el Ataque Mágico del personaje y la posibilidad de
+                aplicar
+                Desventajas por
+                objetivo.
+                </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="dye-img-5"></td>
+            <td>WIT</td>
+            <td class="dye-descripcion">
+              <p>
+                Sabiduría, afecta a la Velocidad de la Magia, la cantidad de experiencia
+                restaurada
+                al resucitar.
+                </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="dye-img-6"></td>
+            <td>MEN</td>
+            <td class="dye-descripcion">
+              <p>
+                Afecta por Magic Def., MP máximo, tasa de recuperación de MP, reduce la
+                posibilidad
+                de interrupción del
+                hechizo por
+                daño, resistencia a los ataques mentales, resistencia a la parálisis, resistencia a las maldiciones.
+            </td>
+          </tr>
+        </table>
 
       </div>
     </div>
-  </section>
-  <hr>
-
-  <section id="taller">
-    <a name="siguiente">
-      <h3>Personaje seleccionado = ""</h3>
-    </a>
-
-  </section>
+    </div>
 
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./darkMode.js"></script>
+    <script src="./main.js"></script>
+  </body>
 
 
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-  <script src="./darkMode.js"></script>
-  <script src="./main.js"></script>
-</body>
-
-</html>
+  </html>

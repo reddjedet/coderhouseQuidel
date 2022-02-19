@@ -1,9 +1,17 @@
-/* const clickBotonLlevaEmpiezaTaller = function() => {
+//Footer
+$(document).ready(function () {
+  $(".container-dyes").hide();
+  $(".container-dyes").slideDown("slow", function () {
+    console.log("hecho");
+  });
+});
 
-
-
-}
- */
+//boton que revela footer
+$("#btn-footer").click(function () {
+  $(".container-dyes").slideToggle("slow", (e) => {
+    window.scrollBy(0, 300);
+  });
+});
 
 //Botones reveal
 $("#btn-gh").click(() => {
@@ -186,7 +194,7 @@ $("#btn-so").click(() => {
   );
 });
 
-$("#btn-arh").click(() => {
+$("#btn-arch").click(() => {
   $(".container-arch").animate(
     {
       height: "toggle",

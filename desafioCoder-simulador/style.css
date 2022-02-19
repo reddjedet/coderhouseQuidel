@@ -31,7 +31,17 @@ svg {
 .container-sag,
 .container-ss,
 .container-mm,
-.container-so {
+.container-so,
+.container-arch,
+.container-duel,
+.container-dread,
+.container-gk,
+.container-ti,
+.container-fs,
+.container-maes,
+.container-sm,
+.container-em,
+.container-al {
   background-color: rgba(56, 112, 233, 0.6);
   border-bottom-right-radius: 50px;
   display: block;
@@ -48,7 +58,17 @@ svg {
 .container-sag,
 .container-ss,
 .container-mm,
-.container-so > p {
+.container-so,
+.container-arch,
+.container-duel,
+.container-dread,
+.container-gk,
+.container-ti,
+.container-fs,
+.container-maes,
+.container-sm,
+.container-em,
+.container-al > p {
   width: 90%;
   padding-left: 2%;
   margin-left: 2%;
@@ -72,12 +92,75 @@ svg {
   background-color: #1eaca6;
 }
 
-#taller {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  padding-top: 3%;
-  padding-bottom: 3%;
+/* Footer  */
+#btn-footer {
+  margin-right: 43%;
+  margin-left: 43%;
 }
 
-#taller h3 {
+.footer {
+  position: absolute;
+  width: 50vw;
+  margin-left: 22%;
+  font-weight: bolder;
+}
+
+/* Tabla */
+
+.container-dyes img {
+  width: 5%;
+}
+
+.container-dyes > td,
+th {
+  padding: 2em;
   color: #150a40;
+}
+
+.dye-descripcion:hover {
+  transform: skew(11deg, 0);
+  background-color: #3f3b1a;
+}
+
+th,
+td,
+tr {
+  border: 1px solid red;
+}
+
+.dye-img-1 {
+  background-image: url("./img/dye-con.jpg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dye-img-2 {
+  background-image: url("./img/dye-str.jpg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dye-img-3 {
+  background-image: url("./img/dye-dex.jpg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dye-img-4 {
+  background-image: url("./img/dye-int.jpg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dye-img-5 {
+  background-image: url("./img/dye-wit.jpg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dye-img-6 {
+  background-image: url("./img/dye-men.jpg");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
