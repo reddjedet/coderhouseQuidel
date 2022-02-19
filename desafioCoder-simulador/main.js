@@ -1,15 +1,7 @@
-//Footer
-$(document).ready(function () {
-  $(".container-dyes").hide();
-  $(".container-dyes").slideDown("slow", function () {
-    console.log("hecho");
-  });
-});
-
 //boton que revela footer
 $("#btn-footer").click(function () {
-  $(".container-dyes").slideToggle("slow", (e) => {
-    window.scrollBy(0, 300);
+  $(".container-dyes").toggle("slow", (e) => {
+    window.scrollBy(0, 8000);
   });
 });
 

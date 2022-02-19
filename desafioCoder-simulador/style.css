@@ -2,7 +2,7 @@
   box-sizing: border-box;
   font-family: "Cascadia Code";
   font-size: 14px;
-  color: cornsilk;
+  color: rgb(227, 229, 233);
 }
 
 body {
@@ -92,6 +92,7 @@ svg {
   background-color: #1eaca6;
 }
 
+/* ---------------------------------------- */
 /* Footer  */
 #btn-footer {
   margin-right: 43%;
@@ -106,6 +107,21 @@ svg {
 }
 
 /* Tabla */
+.container-dyes {
+  background: rgba(162, 67, 246, 0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #150a40;
+}
+
+.container-dyes:hover {
+  background: rgba(162, 67, 246, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
 
 .container-dyes img {
   width: 5%;
@@ -118,14 +134,22 @@ th {
 }
 
 .dye-descripcion:hover {
-  transform: skew(11deg, 0);
-  background-color: #3f3b1a;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: rgba(255, 195, 0, 0.4) 5px 0px, rgba(255, 195, 0, 0.3) 10px 0px,
+    rgba(255, 195, 0, 0.2) 15px 0px, rgba(255, 195, 0, 0.1) 20px 0px,
+    rgba(255, 195, 0, 0.05) 25px 0px;
+}
+
+.dye-descripcion p:hover {
+  background-color: 255, 195, 0, 0.4;
+  color: rgb(255, 195, 0);
 }
 
 th,
 td,
 tr {
-  border: 1px solid red;
+  border: 1px solid rgba(162, 67, 246, 0.4);
 }
 
 .dye-img-1 {
