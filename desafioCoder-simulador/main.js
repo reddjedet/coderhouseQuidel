@@ -1,9 +1,4 @@
-//boton que revela footer
-$("#btn-footer").click(function () {
-  $(".container-dyes").toggle("slow", (e) => {
-    window.scrollBy(0, 8000);
-  });
-});
+//Declaraciones
 
 //Botones reveal
 $("#btn-gh").click(() => {
@@ -90,6 +85,21 @@ $("#btn-pk").click(() => {
     },
     function () {
       $(".container-pk").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+$("#btn-hk").click(() => {
+  $(".container-hk").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-hk").animate({
         marginLeft: 85,
       });
     }
@@ -334,6 +344,76 @@ $("#btn-al").click(() => {
       });
     }
   );
+});
+
+$("#btn-doom").click(() => {
+  $(".container-doom").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-doom").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+$("#btn-sh").click(() => {
+  $(".container-sh").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-sh").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+$("#btn-tri").click(() => {
+  $(".container-tri").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-tri").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+$("#btn-jud").click(() => {
+  $(".container-jud").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-jud").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+/* --------------- Edicion de stats  -----------*/
+
+/* --------------- Footer  --------------*/
+//boton que revela footer
+$("#btn-footer").click(function () {
+  $(".container-dyes").toggle("slow", (e) => {
+    window.scrollBy(0, 8000);
+  });
 });
 
 //agregar iteraciones

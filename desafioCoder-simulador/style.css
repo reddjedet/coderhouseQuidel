@@ -26,6 +26,7 @@ svg {
 .container-st,
 .container-et,
 .container-pk,
+.container-hk,
 .container-gs,
 .container-ms,
 .container-sag,
@@ -41,7 +42,11 @@ svg {
 .container-maes,
 .container-sm,
 .container-em,
-.container-al {
+.container-al,
+.container-doom,
+.container-sh,
+.container-tri,
+.container-jud {
   background-color: rgba(56, 112, 233, 0.6);
   border-bottom-right-radius: 50px;
   display: block;
@@ -53,6 +58,7 @@ svg {
 .container-st,
 .container-et,
 .container-pk,
+.container-hk,
 .container-gs,
 .container-ms,
 .container-sag,
@@ -68,7 +74,11 @@ svg {
 .container-maes,
 .container-sm,
 .container-em,
-.container-al > p {
+.container-al,
+.container-doom,
+.container-sh,
+.container-tri,
+.container-jud > p {
   width: 90%;
   padding-left: 2%;
   margin-left: 2%;
@@ -90,6 +100,16 @@ svg {
 
 .btn-dark:hover {
   background-color: #1eaca6;
+}
+
+/* --------------------------------- */
+/* Edicion de stats */
+.edicion-de-stats {
+  border: 1px solid white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /* ---------------------------------------- */
