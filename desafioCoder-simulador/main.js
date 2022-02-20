@@ -2,6 +2,7 @@
 
 //Botones reveal
 $("#btn-gh").click(() => {
+  $(".btn-success").toggle();
   $(".container-gh").animate(
     {
       height: "toggle",
@@ -17,6 +18,7 @@ $("#btn-gh").click(() => {
 });
 
 $("#btn-wr").click(() => {
+  $(".btn-success").toggle();
   $(".container-wr").animate(
     {
       height: "toggle",
@@ -32,6 +34,7 @@ $("#btn-wr").click(() => {
 });
 
 $("#btn-adven").click(() => {
+  $(".btn-success").toggle();
   $(".container-adven").animate(
     {
       height: "toggle",
@@ -47,6 +50,7 @@ $("#btn-adven").click(() => {
 });
 
 $("#btn-st").click(() => {
+  $(".btn-success").toggle();
   $(".container-st").animate(
     {
       height: "toggle",
@@ -62,6 +66,7 @@ $("#btn-st").click(() => {
 });
 
 $("#btn-et").click(() => {
+  $(".btn-success").toggle();
   $(".container-et").animate(
     {
       height: "toggle",
@@ -77,6 +82,7 @@ $("#btn-et").click(() => {
 });
 
 $("#btn-pk").click(() => {
+  $(".btn-success").toggle();
   $(".container-pk").animate(
     {
       height: "toggle",
@@ -92,6 +98,7 @@ $("#btn-pk").click(() => {
 });
 
 $("#btn-hk").click(() => {
+  $(".btn-success").toggle();
   $(".container-hk").animate(
     {
       height: "toggle",
@@ -107,6 +114,7 @@ $("#btn-hk").click(() => {
 });
 
 $("#btn-gs").click(() => {
+  $(".btn-success").toggle();
   $(".container-gs").animate(
     {
       height: "toggle",
@@ -122,6 +130,7 @@ $("#btn-gs").click(() => {
 });
 
 $("#btn-ms").click(() => {
+  $(".btn-success").toggle();
   $(".container-ms").animate(
     {
       height: "toggle",
@@ -137,6 +146,7 @@ $("#btn-ms").click(() => {
 });
 
 $("#btn-sag").click(() => {
+  $(".btn-success").toggle();
   $(".container-sag").animate(
     {
       height: "toggle",
@@ -152,6 +162,7 @@ $("#btn-sag").click(() => {
 });
 
 $("#btn-ss").click(() => {
+  $(".btn-success").toggle();
   $(".container-ss").animate(
     {
       height: "toggle",
@@ -167,6 +178,7 @@ $("#btn-ss").click(() => {
 });
 
 $("#btn-mm").click(() => {
+  $(".btn-success").toggle();
   $(".container-mm").animate(
     {
       height: "toggle",
@@ -182,6 +194,7 @@ $("#btn-mm").click(() => {
 });
 
 $("#btn-so").click(() => {
+  $(".btn-success").toggle();
   $(".container-so").animate(
     {
       height: "toggle",
@@ -197,6 +210,7 @@ $("#btn-so").click(() => {
 });
 
 $("#btn-arch").click(() => {
+  $(".btn-success").toggle();
   $(".container-arch").animate(
     {
       height: "toggle",
@@ -212,6 +226,7 @@ $("#btn-arch").click(() => {
 });
 
 $("#btn-duel").click(() => {
+  $(".btn-success").toggle();
   $(".container-duel").animate(
     {
       height: "toggle",
@@ -227,6 +242,7 @@ $("#btn-duel").click(() => {
 });
 
 $("#btn-dread").click(() => {
+  $(".btn-success").toggle();
   $(".container-dread").animate(
     {
       height: "toggle",
@@ -242,6 +258,7 @@ $("#btn-dread").click(() => {
 });
 
 $("#btn-gk").click(() => {
+  $(".btn-success").toggle();
   $(".container-gk").animate(
     {
       height: "toggle",
@@ -257,6 +274,7 @@ $("#btn-gk").click(() => {
 });
 
 $("#btn-ti").click(() => {
+  $(".btn-success").toggle();
   $(".container-ti").animate(
     {
       height: "toggle",
@@ -272,6 +290,7 @@ $("#btn-ti").click(() => {
 });
 
 $("#btn-fs").click(() => {
+  $(".btn-success").toggle();
   $(".container-fs").animate(
     {
       height: "toggle",
@@ -287,6 +306,7 @@ $("#btn-fs").click(() => {
 });
 
 $("#btn-maes").click(() => {
+  $(".btn-success").toggle();
   $(".container-maes").animate(
     {
       height: "toggle",
@@ -302,6 +322,7 @@ $("#btn-maes").click(() => {
 });
 
 $("#btn-sm").click(() => {
+  $(".btn-success").toggle();
   $(".container-sm").animate(
     {
       height: "toggle",
@@ -317,6 +338,7 @@ $("#btn-sm").click(() => {
 });
 
 $("#btn-em").click(() => {
+  $(".btn-success").toggle();
   $(".container-em").animate(
     {
       height: "toggle",
@@ -332,6 +354,7 @@ $("#btn-em").click(() => {
 });
 
 $("#btn-al").click(() => {
+  $(".btn-success").toggle();
   $(".container-al").animate(
     {
       height: "toggle",
@@ -347,6 +370,7 @@ $("#btn-al").click(() => {
 });
 
 $("#btn-doom").click(() => {
+  $(".btn-success").toggle();
   $(".container-doom").animate(
     {
       height: "toggle",
@@ -362,6 +386,7 @@ $("#btn-doom").click(() => {
 });
 
 $("#btn-sh").click(() => {
+  $(".btn-success").toggle();
   $(".container-sh").animate(
     {
       height: "toggle",
@@ -377,6 +402,7 @@ $("#btn-sh").click(() => {
 });
 
 $("#btn-tri").click(() => {
+  $(".btn-success").toggle();
   $(".container-tri").animate(
     {
       height: "toggle",
@@ -392,6 +418,7 @@ $("#btn-tri").click(() => {
 });
 
 $("#btn-jud").click(() => {
+  $(".btn-success").toggle();
   $(".container-jud").animate(
     {
       height: "toggle",
