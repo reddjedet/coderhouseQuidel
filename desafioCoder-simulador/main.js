@@ -321,6 +321,70 @@ $("#btn-maes").click(() => {
   );
 });
 
+$("#btn-shs").click(() => {
+  $(".btn-success").toggle();
+  $(".container-shs").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-shs").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+$("#btn-es").click(() => {
+  $(".btn-success").toggle();
+  $(".container-es").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-es").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+$("#btn-ca").click(() => {
+  $(".btn-success").toggle();
+  $(".container-ca").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-ca").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+$("#btn-hi").click(() => {
+  $(".btn-success").toggle();
+  $(".container-hi").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-hi").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
 $("#btn-sm").click(() => {
   $(".btn-success").toggle();
   $(".container-sm").animate(

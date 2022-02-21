@@ -2,79 +2,476 @@
   "Personajes": [
     {
       "Dagueros": [
-        { "raza": "elfo oscuro", "profesion": "Ghost Hunter" },
-        { "raza": "elfo", "profesion": "Wind Rider" },
-        { "raza": "humano", "profesion": "Adventurer" }
+        {
+          "raza": "elfo oscuro",
+          "profesion": "Ghost Hunter",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 32,
+            "STR": 41,
+            "DEX": 34,
+            "INT": 25,
+            "WIT": 12,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "elfo",
+          "profesion": "Wind Rider",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "Adventurer",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        }
       ]
     },
 
     {
       "Tanques": [
-        { "raza": "elfo oscuro", "profesion": "Shillien Templar" },
-        { "raza": "elfo", "profesion": "Eva's Templar" },
-        { "raza": "humano", "profesion": "Phoenix Knight" },
-        { "raza": "humano", "profesion": "Hell Knight" }
+        {
+          "raza": "elfo oscuro",
+          "profesion": "Shillien Templar",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 32,
+            "STR": 41,
+            "DEX": 34,
+            "INT": 25,
+            "WIT": 12,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "elfo",
+          "profesion": "Eva's Templar",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "Phoenix Knight",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "Hell Knight",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        }
       ]
     },
     {
       "Arqueros": [
-        { "raza": "elfo oscuro", "profesion": "Ghost Sentinel" },
-        { "raza": "elfo", "profesion": "Moonlight Sentinel" },
-        { "raza": "humano", "profesion": "Sagittarius" }
+        {
+          "raza": "elfo oscuro",
+          "profesion": "Ghost Sentinel",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 32,
+            "STR": 41,
+            "DEX": 34,
+            "INT": 25,
+            "WIT": 12,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "elfo",
+          "profesion": "Moonlight Sentinel",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "Sagittarius",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        }
       ]
     },
 
     {
       "Magos": [
-        { "raza": "elfo oscuro", "profesion": "Storm Screamer" },
-        { "raza": "elfo", "profesion": "Mystic Muse" },
-        { "raza": "humano", "profesion": "SoulTaker" },
-        { "raza": "humano", "profesion": "Archmage" }
+        {
+          "raza": "elfo oscuro",
+          "profesion": "Storm Screamer",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 32,
+            "STR": 23,
+            "DEX": 23,
+            "INT": 44,
+            "WIT": 19,
+            "MEN": 37
+          }
+        },
+        {
+          "raza": "elfo",
+          "profesion": "Mystic Muse",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 21,
+            "STR": 25,
+            "DEX": 24,
+            "INT": 37,
+            "WIT": 23,
+            "MEN": 40
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "SoulTaker",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 27,
+            "STR": 22,
+            "DEX": 21,
+            "INT": 41,
+            "WIT": 20,
+            "MEN": 39
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "Archmage",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 27,
+            "STR": 22,
+            "DEX": 21,
+            "INT": 41,
+            "WIT": 20,
+            "MEN": 39
+          }
+        }
       ]
     },
 
     {
       "Guerreros": [
-        { "raza": "humano", "profesion": "Duelist" },
-        { "raza": "humano", "profesion": "Dreadnought" },
-        { "raza": "orco", "profesion": "Grand Khavatari" },
-        { "raza": "orco", "profesion": "Titan" },
-        { "raza": "enano", "profesion": "Fortune Seeker" },
-        { "raza": "enano", "profesion": "Maestro" }
+        {
+          "raza": "humano",
+          "profesion": "Duelist",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "Dreadnought",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "orco",
+          "profesion": "Grand Khavatari",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 47,
+            "STR": 40,
+            "DEX": 26,
+            "INT": 18,
+            "WIT": 12,
+            "MEN": 27
+          }
+        },
+        {
+          "raza": "orco",
+          "profesion": "Titan",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 47,
+            "STR": 40,
+            "DEX": 26,
+            "INT": 18,
+            "WIT": 12,
+            "MEN": 27
+          }
+        },
+        {
+          "raza": "enano",
+          "profesion": "Fortune Seeker",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 45,
+            "STR": 39,
+            "DEX": 29,
+            "INT": 20,
+            "WIT": 29,
+            "MEN": 27
+          }
+        },
+        {
+          "raza": "enano",
+          "profesion": "Maestro",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 45,
+            "STR": 39,
+            "DEX": 29,
+            "INT": 20,
+            "WIT": 29,
+            "MEN": 27
+          }
+        }
       ]
     },
 
     {
       "Pet masters": [
-        { "raza": "elfo oscuro", "profesion": "Spectral Master" },
-        { "raza": "elfo", "profesion": "Elemental Master" },
-        { "raza": "humano", "profesion": "Arcana Lord" }
+        {
+          "raza": "elfo oscuro",
+          "profesion": "Spectral Master",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 32,
+            "STR": 23,
+            "DEX": 23,
+            "INT": 44,
+            "WIT": 19,
+            "MEN": 37
+          }
+        },
+        {
+          "raza": "elfo",
+          "profesion": "Elemental Master",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 21,
+            "STR": 25,
+            "DEX": 24,
+            "INT": 37,
+            "WIT": 23,
+            "MEN": 40
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "Arcana Lord",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 27,
+            "STR": 22,
+            "DEX": 21,
+            "INT": 41,
+            "WIT": 20,
+            "MEN": 39
+          }
+        }
       ]
     },
 
     {
       "Kamaels": [
-        { "raza": "kamael", "profesion": "Doombringer" },
-        { "raza": "kamael", "profesion": "Soul Hound (M)" },
-        { "raza": "kamael", "profesion": "Soul Hound (F)" },
-        { "raza": "kamael", "profesion": "Trickster" },
-        { "raza": "kamael", "profesion": "Judicator" }
+        {
+          "raza": "kamael",
+          "profesion": "Doombringer",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 31,
+            "STR": 41,
+            "DEX": 33,
+            "INT": 29,
+            "WIT": 11,
+            "MEN": 25
+          }
+        },
+        { "raza": "kamael", "profesion": "Soul Hound", "tipo": "hibrido" },
+        {
+          "raza": "kamael",
+          "profesion": "Trickster",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 30,
+            "STR": 39,
+            "DEX": 35,
+            "INT": 28,
+            "WIT": 11,
+            "MEN": 27
+          }
+        },
+        { "raza": "kamael", "profesion": "Judicator", "tipo": "fisico" }
       ]
     },
 
     {
       "Buffers": [
-        { "raza": "elfo oscuro", "profesion": "Shillien Saint" },
-        { "raza": "elfo", "profesion": "Eva's Saint" },
-        { "raza": "humano", "profesion": "Cardinal" },
-        { "raza": "humano", "profesion": "Hierophant" }
+        {
+          "raza": "elfo oscuro",
+          "profesion": "Shillien Saint",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 32,
+            "STR": 23,
+            "DEX": 23,
+            "INT": 44,
+            "WIT": 19,
+            "MEN": 37
+          }
+        },
+        {
+          "raza": "elfo",
+          "profesion": "Eva's Saint",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 21,
+            "STR": 25,
+            "DEX": 24,
+            "INT": 37,
+            "WIT": 23,
+            "MEN": 40
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "Cardinal",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 27,
+            "STR": 22,
+            "DEX": 21,
+            "INT": 41,
+            "WIT": 20,
+            "MEN": 39
+          }
+        },
+        {
+          "raza": "humano",
+          "profesion": "Hierophant",
+          "tipo": "mágico",
+          "stats": {
+            "CON": 27,
+            "STR": 22,
+            "DEX": 21,
+            "INT": 41,
+            "WIT": 20,
+            "MEN": 39
+          }
+        },
+        {
+          "raza": "orco",
+          "profesion": "Dominator",
+          "tipo": "hibrido",
+          "stats": {
+            "CON": 27,
+            "STR": 24,
+            "DEX": 31,
+            "INT": 31,
+            "WIT": 15,
+            "MEN": 42
+          }
+        },
+        {
+          "raza": "orco",
+          "profesion": "Doomcryer",
+          "tipo": "hibrido",
+          "stats": {
+            "CON": 27,
+            "STR": 24,
+            "DEX": 31,
+            "INT": 31,
+            "WIT": 15,
+            "MEN": 42
+          }
+        }
       ]
     },
 
     {
       "Dance": [
-        { "raza": "elfo oscuro", "profesion": "Spectral Master" },
-        { "raza": "elfo", "profesion": "Sword Muse" }
+        {
+          "raza": "elfo oscuro",
+          "profesion": "Spectral Master",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 32,
+            "STR": 41,
+            "DEX": 34,
+            "INT": 25,
+            "WIT": 12,
+            "MEN": 26
+          }
+        },
+        {
+          "raza": "elfo",
+          "profesion": "Sword Muse",
+          "tipo": "fisico",
+          "stats": {
+            "CON": 36,
+            "STR": 36,
+            "DEX": 35,
+            "INT": 23,
+            "WIT": 14,
+            "MEN": 26
+          }
+        }
       ]
     }
   ]
