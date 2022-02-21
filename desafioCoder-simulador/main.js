@@ -385,6 +385,38 @@ $("#btn-hi").click(() => {
   );
 });
 
+$("#btn-dom").click(() => {
+  $(".btn-success").toggle();
+  $(".container-dom").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-dom").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+$("#btn-doomcr").click(() => {
+  $(".btn-success").toggle();
+  $(".container-doomcr").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-doomcr").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
 $("#btn-sm").click(() => {
   $(".btn-success").toggle();
   $(".container-sm").animate(

@@ -1,6 +1,6 @@
 /* ---------------------- */
 
-const URLGET = "./statsRaza.json";
+const URLGET = "./clasesPersonajes.json";
 $("#btn-seleccion").click(() => {
   //el click debiera cambiarle el id segun cual boton sea
 
@@ -8,10 +8,12 @@ $("#btn-seleccion").click(() => {
     if (estado === "success") {
       let misDatos = respuesta;
       for (const dato of misDatos) {
-        $(".container-elegido").append(`
+        $(".container-elegido").append(`<h3>
         ${raza.value}
         ${tipo.value}
-        ${stats.value}`);
+        ${stats.value}
+        </h3>
+        `);
       }
     }
   });
