@@ -529,6 +529,38 @@ $("#btn-jud").click(() => {
   );
 });
 
+$("#btn-sd").click(() => {
+  $(".btn-success").toggle();
+  $(".container-sd").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-sd").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
+$("#btn-smu").click(() => {
+  $(".btn-success").toggle();
+  $(".container-smu").animate(
+    {
+      height: "toggle",
+      opacity: 0.9,
+      marginTop: 7,
+    },
+    function () {
+      $(".container-smu").animate({
+        marginLeft: 85,
+      });
+    }
+  );
+});
+
 /* --------------- Edicion de stats  -----------*/
 
 /* --------------- Footer  --------------*/

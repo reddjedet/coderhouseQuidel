@@ -52,7 +52,9 @@ svg {
 .container-doom,
 .container-sh,
 .container-tri,
-.container-jud {
+.container-jud,
+.container-sd,
+.container-smu {
   background-color: rgba(56, 112, 233, 0.6);
   border-bottom-right-radius: 50px;
   display: block;
@@ -90,7 +92,9 @@ svg {
 .container-doom,
 .container-sh,
 .container-tri,
-.container-jud > p {
+.container-jud,
+.container-sd,
+.container-smu > p {
   width: 90%;
   padding-left: 2%;
   margin-left: 2%;
