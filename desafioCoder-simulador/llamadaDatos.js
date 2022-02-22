@@ -3,10 +3,29 @@ const URLGET = "./clasesPersonajes.json";
 
 fetch(URLGET)
   .then((response) => response.json())
-  .then((Personajes) => {
-    for (let personaje in Personajes) {
-      $(".edicion-de-stats").append(`
-    <h1>${personaje.profesion}</h1>`);
+  .then((lista) => {
+    for (let objeto in lista) {
+      if (lista.raza == "humano") {
+        $(".edicion-de-stats").append(`
+    <h1>${lista.raza}</h1>`);
+      }
+      console.log(lista[2].stats);
     }
-    console.log(Personajes);
-  }); //agregar filter
+  });
+
+document.getElementById("demo").innerHTML = ages.find(checkAge);
+
+/* 
+const URLGET = "./clasesPersonajes.json";
+
+fetch(URLGET)
+  .then((response) => response.json())
+  .then((lista) => {
+    for (let objeto in lista) {
+      if (lista.raza == "humano") {
+        $(".edicion-de-stats").append(`
+    <h1>${lista.raza}</h1>`);
+      }
+      console.log(lista[2].stats);
+    }
+  }); */
