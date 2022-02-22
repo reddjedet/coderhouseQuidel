@@ -17,6 +17,7 @@ document.getElementById("demo").innerHTML = ages.find(checkAge);
  */
 
 //funcion
+
 const contenido = document.querySelector("#contenido");
 
 function traer() {
@@ -35,10 +36,10 @@ function tabla(datos) {
     contenido.innerHTML += `
 
 <tr>
-<th scope="row">${valor.id}</th>
+<td scope="row">${valor.profesion}</td>
 <td>${valor.raza}</td>
-<td>${valor.profesion}</td>
-<td>${valor.stats}</td>
+<td>${valor.stats[35]}</td>
+<td><button class="btn btn-warning">Click</button></td>
 </tr>`;
   }
 }

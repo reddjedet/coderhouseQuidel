@@ -1,0 +1,1 @@
+clickear en btn seleccion deberia cambiar el id del btn danger y eso deberia devolver un objeto del json para ser modificado

@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "raza": "elfo oscuro",
     "profesion": "Ghost Hunter",
     "tipo": "fisico",
@@ -13,6 +14,7 @@
     }
   },
   {
+    "id": 2,
     "raza": "elfo",
     "profesion": "Wind Rider",
     "tipo": "fisico",
@@ -26,6 +28,7 @@
     }
   },
   {
+    "id": 3,
     "raza": "humano",
     "profesion": "Adventurer",
     "tipo": "fisico",
@@ -39,6 +42,7 @@
     }
   },
   {
+    "id": 4,
     "raza": "elfo oscuro",
     "profesion": "Shillien Templar",
     "tipo": "fisico",
@@ -52,6 +56,7 @@
     }
   },
   {
+    "id": 5,
     "raza": "elfo",
     "profesion": "Eva's Templar",
     "tipo": "fisico",
@@ -65,6 +70,7 @@
     }
   },
   {
+    "id": 6,
     "raza": "humano",
     "profesion": "Phoenix Knight",
     "tipo": "fisico",
@@ -78,6 +84,7 @@
     }
   },
   {
+    "id": 7,
     "raza": "humano",
     "profesion": "Hell Knight",
     "tipo": "fisico",
@@ -92,6 +99,7 @@
   },
 
   {
+    "id": 8,
     "raza": "elfo oscuro",
     "profesion": "Ghost Sentinel",
     "tipo": "fisico",
@@ -106,6 +114,7 @@
   },
 
   {
+    "id": 9,
     "raza": "elfo",
     "profesion": "Moonlight Sentinel",
     "tipo": "fisico",
@@ -120,6 +129,7 @@
   },
 
   {
+    "id": 10,
     "raza": "humano",
     "profesion": "Sagittarius",
     "tipo": "fisico",
@@ -134,6 +144,7 @@
   },
 
   {
+    "id": 11,
     "raza": "elfo oscuro",
     "profesion": "Storm Screamer",
     "tipo": "mágico",
@@ -148,6 +159,7 @@
   },
 
   {
+    "id": 12,
     "raza": "elfo",
     "profesion": "Mystic Muse",
     "tipo": "mágico",
@@ -162,6 +174,7 @@
   },
 
   {
+    "id": 13,
     "raza": "humano",
     "profesion": "SoulTaker",
     "tipo": "mágico",
@@ -176,6 +189,7 @@
   },
 
   {
+    "id": 14,
     "raza": "humano",
     "profesion": "Archmage",
     "tipo": "mágico",
@@ -190,6 +204,7 @@
   },
 
   {
+    "id": 15,
     "raza": "humano",
     "profesion": "Duelist",
     "tipo": "fisico",
@@ -203,6 +218,7 @@
     }
   },
   {
+    "id": 16,
     "raza": "humano",
     "profesion": "Dreadnought",
     "tipo": "fisico",
@@ -216,6 +232,7 @@
     }
   },
   {
+    "id": 17,
     "raza": "orco",
     "profesion": "Grand Khavatari",
     "tipo": "fisico",
@@ -229,6 +246,7 @@
     }
   },
   {
+    "id": 18,
     "raza": "orco",
     "profesion": "Titan",
     "tipo": "fisico",
@@ -243,6 +261,7 @@
   },
 
   {
+    "id": 19,
     "raza": "enano",
     "profesion": "Fortune Seeker",
     "tipo": "fisico",
@@ -257,6 +276,7 @@
   },
 
   {
+    "id": 20,
     "raza": "enano",
     "profesion": "Maestro",
     "tipo": "fisico",
@@ -271,6 +291,7 @@
   },
 
   {
+    "id": 21,
     "raza": "elfo oscuro",
     "profesion": "Shillien Saint",
     "tipo": "mágico",
@@ -285,6 +306,7 @@
   },
 
   {
+    "id": 22,
     "raza": "elfo",
     "profesion": "Eva's Saint",
     "tipo": "mágico",
@@ -299,6 +321,7 @@
   },
 
   {
+    "id": 23,
     "raza": "humano",
     "profesion": "Cardinal",
     "tipo": "mágico",
@@ -313,6 +336,7 @@
   },
 
   {
+    "id": 24,
     "raza": "humano",
     "profesion": "Hierophant",
     "tipo": "mágico",
@@ -327,6 +351,7 @@
   },
 
   {
+    "id": 25,
     "raza": "orco",
     "profesion": "Dominator",
     "tipo": "hibrido",
@@ -341,6 +366,7 @@
   },
 
   {
+    "id": 26,
     "raza": "orco",
     "profesion": "Doomcryer",
     "tipo": "hibrido",
@@ -355,6 +381,7 @@
   },
 
   {
+    "id": 27,
     "raza": "elfo oscuro",
     "profesion": "Spectral Master",
     "tipo": "mágico",
@@ -369,6 +396,7 @@
   },
 
   {
+    "id": 28,
     "raza": "elfo",
     "profesion": "Elemental Master",
     "tipo": "mágico",
@@ -383,6 +411,7 @@
   },
 
   {
+    "id": 29,
     "raza": "humano",
     "profesion": "Arcana Lord",
     "tipo": "mágico",
@@ -397,6 +426,7 @@
   },
 
   {
+    "id": 30,
     "raza": "kamael",
     "profesion": "Doombringer",
     "tipo": "fisico",
@@ -411,6 +441,7 @@
   },
 
   {
+    "id": 31,
     "raza": "kamael",
     "profesion": "Soul Hound",
     "tipo": "hibrido",
@@ -425,6 +456,7 @@
   },
 
   {
+    "id": 32,
     "raza": "kamael",
     "profesion": "Trickster",
     "tipo": "fisico",
@@ -439,6 +471,7 @@
   },
 
   {
+    "id": 33,
     "raza": "kamael",
     "profesion": "Judicator",
     "tipo": "fisico",
@@ -453,6 +486,7 @@
   },
 
   {
+    "id": 34,
     "raza": "elfo oscuro",
     "profesion": "Spectral Dancer",
     "tipo": "fisico",
@@ -467,6 +501,7 @@
   },
 
   {
+    "id": 35,
     "raza": "elfo",
     "profesion": "Sword Muse",
     "tipo": "fisico",
